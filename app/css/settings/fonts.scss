@@ -1,0 +1,47 @@
+@font-face { 
+  font-family: 'futura-book-bold'; 
+  src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+       url('../fonts/FuturaPT-Book.eot') format('eot'),
+       url('../fonts/FuturaPT-Book.otf') format('otf'),
+       url('../fonts/FuturaPT-Book.svg') format('svg'),
+       url('../fonts/FuturaPT-Book.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/FuturaPT-Book.woff') format('woff'); 
+  font-weight: 700; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'futura-book'; 
+  src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+       url('../fonts/FuturaPT-Book.eot') format('eot'),
+       url('../fonts/FuturaPT-Book.otf') format('otf'),
+       url('../fonts/FuturaPT-Book.svg') format('svg'),
+       url('../fonts/FuturaPT-Book.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/FuturaPT-Book.woff') format('woff'); 
+  font-weight: 400; 
+  font-style: normal; 
+}
+
+
+@font-face { 
+  font-family: 'futura-demi-bold'; 
+  src: url('../fonts/FuturaPT-Demi.woff2') format('woff2'),
+  	   url('../fonts/FuturaPT-Demi.eot') format('eot'),
+  	   url('../fonts/FuturaPT-Demi.otf') format('otf'),
+  	   url('../fonts/FuturaPT-Demi.svg') format('svg'),
+       url('../fonts/FuturaPT-Demi.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/FuturaPT-Demi.woff') format('woff'); 
+  font-weight: 700; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'futura-demi'; 
+  src: url('../fonts/FuturaPT-Demi.woff2') format('woff2'),
+  	   url('../fonts/FuturaPT-Demi.eot') format('eot'),
+  	   url('../fonts/FuturaPT-Demi.otf') format('otf'),
+  	   url('../fonts/FuturaPT-Demi.svg') format('svg'),
+       url('../fonts/FuturaPT-Demi.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/FuturaPT-Demi.woff') format('woff'); 
+  font-weight: 400; 
+  font-style: normal; 
+}
