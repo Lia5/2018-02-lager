@@ -476,6 +476,11 @@ button {
   min-height: 500px;
   background: transparent; }
 
+/**/
+.fix-top__phone,
+.fix-top__mail {
+  color: #4196cb; }
+
 @font-face {
   font-family: 'HelveticaNeueCyr-Bold';
   src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.eot") format("eot"), url("../fonts/HelveticaNeueCyr-Bold.otf") format("otf"), url("../fonts/HelveticaNeueCyr-Bold.svg") format("svg"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
@@ -2822,5 +2827,115 @@ button {
   overflow: visible;
   clip: auto; }
 
+.fix-top__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.fix-top__phone,
+.fix-top__mail {
+  font-size: 30px; }
+
+.fix-top__title__name {
+  font-size: 30px; }
+
+.fix-top__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.season__icon {
+  width: 20px;
+  height: 20px; }
+
+.season__icon img {
+  width: 100%; }
+
+/*gamburger*/
+body {
+  background: tomato; }
+
+.fix-top__main-menu__title {
+  text-align: center;
+  font-size: 25px;
+  display: block;
+  position: relative; }
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  cursor: pointer; }
+
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px); }
+
+.menu-toggle.on .two {
+  opacity: 0; }
+
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px); }
+
+.one,
+.two,
+.three {
+  width: 100%;
+  height: 5px;
+  background: #000000;
+  margin: 6px auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 4em auto;
+  text-align: center; }
+
+nav ul.hidden {
+  display: none; }
+
+nav ul a {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2em;
+  line-height: 1.2;
+  width: 100%;
+  display: block; }
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.fix-top__main-menu.on {
+  z-index: 10;
+  width: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute; }
+
+/*end gamburger*/
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;*/
