@@ -514,8 +514,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1170px;
-  margin: 0 auto; }
+  max-width: 1170px; }
 
 @font-face {
   font-family: 'HelveticaNeueCyr-Bold';
@@ -2966,7 +2965,12 @@ nav ul a:hover {
 .fix-top__planshet {
   display: none; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 750px) {
+  .wrap {
+    margin: 0 auto;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
   .fix-top__planshet,
   .fix-top__desctop {
     -webkit-box-pack: justify;
@@ -2979,7 +2983,11 @@ nav ul a:hover {
   .fix-top__planshet {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+  .fix-top__button-order,
   .fix-top__button-order,
   .fix-top__phone,
   .fix-top__mail {
@@ -2987,7 +2995,7 @@ nav ul a:hover {
     -ms-flex-positive: 1;
     flex-grow: 1; } }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 980px) {
   .fix-top__planshet {
     display: none; }
   .fix-top__title {
@@ -2995,13 +3003,11 @@ nav ul a:hover {
   .fix-top__desctop {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
-
-@media screen and (min-width: 980px) {
+    display: flex; }
   .fix-top__title {
     display: block; } }
 
-@media screen and (min-width: 1540px) {
+@media screen and (min-width: 1200px) {
   .wrap {
     width: 1170px; } }
 

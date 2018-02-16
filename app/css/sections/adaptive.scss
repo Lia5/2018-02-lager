@@ -1,4 +1,11 @@
 @media screen and (min-width: 480px) {
+
+}
+@media screen and (min-width: 750px) {
+  .wrap {
+    margin: 0 auto;
+    flex-grow: 1;
+  }
   .fix-top__planshet,
   .fix-top__desctop {
     justify-content: space-between;
@@ -7,14 +14,18 @@
   }
   .fix-top__planshet {
     display: flex;
+    flex-grow: 1;
   }
+  .fix-top__button-order,
   .fix-top__button-order,
   .fix-top__phone,
   .fix-top__mail {
     flex-grow: 1;
   }
+
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 980px) {
+  
   .fix-top__planshet {
     display: none;
   }
@@ -24,16 +35,11 @@
   .fix-top__desctop {
     display: flex;
   }
-  .fix-top__seasons-title {
-
-  }
-}
-@media screen and (min-width: 980px) {
   .fix-top__title {
     display: block;
   }
 }
-@media screen and (min-width: 1540px) {
+@media screen and (min-width: 1200px) {
   .wrap {
     width: 1170px;
   }
