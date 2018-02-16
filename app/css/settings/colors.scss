@@ -1,4 +1,42 @@
-.fix-top__phone, 
+
+$white: #ffffff;
+$black: #000000;
+$blue: #4196cb;
+$pink: #a81a5c;
+$dirty-blue:#778d9b;
+$grey: rgba(0, 0, 0, 0.4);
+$grey2: #bababa;
+$vk: #5167e8;
+$facebook: #203097;
+
+
+a { //ссылки
+  color: $black;
+}
+.fix-top__phone, //цвет телефона (и трубки) в фиксированной верхней планке
+.fix-top__mail { //цвет почты (и конверта) в фиксированной верхней планке
+  color: $dirty-blue;  
+}
+.fix-top { //цвет нижней рамки фиксированного меню
+ border-bottom: 1px solid $dirty-blue;
+}
+.fix-top__title {  // цвет надписи "сезоны" на десктопе (фиксированное меню)
+  color: $grey;
+}
+//социальные иконки
+.fa-vk {
+  color: $vk;
+}
+.fa-instagram {
+  color: $pink;
+}
+.fa-facebook {
+  color: $facebook;
+}
+.fa.sosial__icon:hover {
+  color: $dirty-blue;
+}
 .fix-top__mail {
-    color: $blue;
+  border-left: 1px solid $grey2;
+  border-right: 1px solid $grey2;
 }

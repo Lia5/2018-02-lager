@@ -1,0 +1,41 @@
+@media screen and (min-width: 480px) {
+  .fix-top__planshet,
+  .fix-top__desctop {
+    justify-content: space-between;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .fix-top__planshet {
+    display: flex;
+  }
+  .fix-top__button-order,
+  .fix-top__phone,
+  .fix-top__mail {
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 750px) {
+  .fix-top__planshet {
+    display: none;
+  }
+  .fix-top__title {
+    display: none;
+  }
+  .fix-top__desctop {
+    display: flex;
+  }
+  .fix-top__seasons-title {
+
+  }
+}
+@media screen and (min-width: 980px) {
+  .fix-top__title {
+    display: block;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .wrap {
+    width: 1170px;
+  }
+}
+

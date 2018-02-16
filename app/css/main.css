@@ -406,6 +406,35 @@ template {
 [hidden] {
   display: none; }
 
+a {
+  color: #000000; }
+
+.fix-top__phone,
+.fix-top__mail {
+  color: #778d9b; }
+
+.fix-top {
+  border-bottom: 1px solid #778d9b; }
+
+.fix-top__title {
+  color: rgba(0, 0, 0, 0.4); }
+
+.fa-vk {
+  color: #5167e8; }
+
+.fa-instagram {
+  color: #a81a5c; }
+
+.fa-facebook {
+  color: #203097; }
+
+.fa.sosial__icon:hover {
+  color: #778d9b; }
+
+.fix-top__mail {
+  border-left: 1px solid #bababa;
+  border-right: 1px solid #bababa; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -414,7 +443,7 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.2;
   background: #ffffff;
   position: relative;
@@ -477,9 +506,16 @@ button {
   background: transparent; }
 
 /**/
-.fix-top__phone,
-.fix-top__mail {
-  color: #4196cb; }
+.fa.sosial__icon {
+  font-size: 15px;
+  padding: 0 7px; }
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto; }
 
 @font-face {
   font-family: 'HelveticaNeueCyr-Bold';
@@ -2834,7 +2870,8 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 8px 16px; }
+  padding: 8px 16px;
+  padding-right: 60px; }
 
 .fix-top__seasons {
   display: -webkit-box;
@@ -2851,8 +2888,8 @@ button {
 
 /*gamburger*/
 .menu-toggle {
-  width: 20px;
-  height: 14px;
+  width: 18px;
+  height: 13px;
   position: absolute;
   top: 8px;
   right: 25px;
@@ -2877,9 +2914,9 @@ button {
 .two,
 .three {
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: #000000;
-  margin: 4px auto;
+  margin: 2px auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-transition-duration: 0.3s;
@@ -2912,6 +2949,9 @@ nav ul a {
 nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.menu-toggle.on .one, .menu-toggle.on .three {
+  margin: 8px auto; }
+
 .fix-top.on {
   z-index: 10;
   width: 100%;
@@ -2922,5 +2962,48 @@ nav ul a:hover {
   position: absolute; }
 
 /*end gamburger*/
+.fix-top__desctop,
+.fix-top__planshet {
+  display: none; }
+
+@media screen and (min-width: 480px) {
+  .fix-top__planshet,
+  .fix-top__desctop {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center; }
+  .fix-top__planshet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .fix-top__button-order,
+  .fix-top__phone,
+  .fix-top__mail {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; } }
+
+@media screen and (min-width: 750px) {
+  .fix-top__planshet {
+    display: none; }
+  .fix-top__title {
+    display: none; }
+  .fix-top__desctop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media screen and (min-width: 980px) {
+  .fix-top__title {
+    display: block; } }
+
+@media screen and (min-width: 1540px) {
+  .wrap {
+    width: 1170px; } }
+
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;*/

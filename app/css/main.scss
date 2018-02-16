@@ -1,12 +1,9 @@
-$white: #ffffff;
-$black: #000000;
-$blue: #4196cb;
-$pink: #a81a5c;
 
 // laout
 @import "settings/normalize.scss";
-@import "settings/setting.scss";
 @import "settings/colors.scss";
+@import "settings/setting.scss";
+
 @import "settings/fonts.scss";
 @import "settings/font-awesome.scss";
 
