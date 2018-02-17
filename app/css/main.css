@@ -3605,13 +3605,32 @@ nav ul a:hover {
   width: 70%;
   margin: 0 auto; }
 
+.statistic {
+  background: url("../img/6-statistic-bg.png");
+  background-position-x: 72%;
+  background-size: cover; }
+
+.statistic-items {
+  padding-left: 50%; }
+
+.statistic__numeric {
+  font-size: 25px;
+  font-family: 'Montserrat Alternates', sans-serif; }
+
+.statistic__description {
+  font-size: 12px;
+  padding-bottom: 24px; }
+
 @media screen and (min-width: 480px) {
   .how__slider {
     font-size: 20px; }
   .mk__slider__decription {
     font-size: 20px; }
   .subtitle--mk {
-    font-size: 30px; } }
+    font-size: 30px; }
+  /*6*/
+  .statistic-items {
+    padding-left: 64%; } }
 
 @media screen and (min-width: 750px) {
   /*0*/
@@ -3745,7 +3764,12 @@ nav ul a:hover {
     padding: 25px;
     min-height: 238px; }
   .mk .mk__slider__item:nth-child(2n) {
-    margin-left: auto; } }
+    margin-left: auto; }
+  /*6*/
+  .statistic__numeric {
+    font-size: 40px; }
+  .statistic__description {
+    font-size: 20px; } }
 
 @media screen and (min-width: 1200px) {
   .wrap {
@@ -3815,7 +3839,12 @@ nav ul a:hover {
     margin-right: 1%; }
   .form-typical button {
     width: 33%;
-    margin: 25px 0; } }
+    margin: 25px 0; }
+  /*6*/
+  .statistic__numeric {
+    font-size: 60px; }
+  .statistic__description {
+    font-size: 30px; } }
 
 @media screen and (min-width: 1300px) {
   .main__item__date {
