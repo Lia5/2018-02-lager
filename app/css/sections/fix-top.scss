@@ -1,8 +1,13 @@
+
+
 .fix-top {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 8px 16px;
   padding-right: 60px;
+
 }
 
 .fix-top__seasons {
@@ -48,7 +53,7 @@
 .three {
   width: 100%;
   height: 3px;
-  background: $black;
+  background: $color4;
   margin: 2px auto;
   backface-visibility: hidden;
   -moz-transition-duration: 0.3s;
@@ -73,8 +78,7 @@ nav ul a {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   text-decoration: none;
-  color: $white;
-  font-size: 2em;
+  color: $color3;
   line-height: 1.2;
   width: 100%;
   display: block;
@@ -91,13 +95,52 @@ nav ul a:hover {
   height: 100vh;
   min-height: 300px;
   display: block;
-  background-color: rgba(0, 0, 0, 0.5);
+ // background-color: rgba(0, 0, 0, 0.5);
+ background-color: $color3;
   position: absolute;
 
 }
 
+.main-menu__items {
+  text-transform: uppercase;
+  margin: 0;
 
+}
+.main-menu__items a {
+  padding: 12px;
+}
+.main-menu__item:after {
+  position: relative;
+}
+.main-menu__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 46%;
+  width: 30px;
+  height: 2px;
+}
+.main-menu__item--desctop:after {
+  content: none;
+}
+.main-menu__item--mobile {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
 
+}
+.main-menu__item--mobile:after {
+  content: none;
+}
+.main-menu__item--mobile .sosial-icons {
+  padding-right: 82px;
+}
+.main-menu__items {
+  border-top: 1px solid $color1;
+}
 /*end gamburger*/
 .fix-top__desctop,
 .fix-top__planshet {

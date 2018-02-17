@@ -1,0 +1,30 @@
+.main-screen {
+  padding-top: 47px;
+  background: url('../img/1-main-screen-bg.png'), $color1;
+  height: 100vh;
+  min-height: 400px;
+}
+.main-menu__item--desctop {
+  padding: 9px;
+}
+.main-menu__item--desctop a {
+  display: flex;
+}
+.logo {
+  width: 47px;
+  height: 47px;
+}
+.logo img {
+  width: 100%;
+}
+.main__title {
+  padding: 6px 9px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: 'Constantia-Bold', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+}
+.main-screen nav {
+  z-index: 11;
+  position: relative;
+}

@@ -1,42 +1,64 @@
 
-$white: #ffffff;
-$black: #000000;
-$blue: #4196cb;
-$pink: #a81a5c;
-$dirty-blue:#778d9b;
-$grey: rgba(0, 0, 0, 0.4);
-$grey2: #bababa;
+$color1: #4196cb; //blue
+$color1-1:#778d9b; //dirty-blue
+
+$color2: #a81a5c; //pink
+
+$color3: #ffffff; //white
+
+$color4: #000000; //black
+$color4-1: rgba(0, 0, 0, 0.4); //grey
+$color4-2: #bababa; //grey2
 $vk: #5167e8;
 $facebook: #203097;
 
 
 a { //ссылки
-  color: $black;
+  color: $color4;
+}
+.fix-top {
+  background-color: $color3;
 }
 .fix-top__phone, //цвет телефона (и трубки) в фиксированной верхней планке
 .fix-top__mail { //цвет почты (и конверта) в фиксированной верхней планке
-  color: $dirty-blue;  
+  color: $color1-1;  
 }
 .fix-top { //цвет нижней рамки фиксированного меню
- border-bottom: 1px solid $dirty-blue;
+ border-bottom: 1px solid $color1-1;
 }
 .fix-top__title {  // цвет надписи "сезоны" на десктопе (фиксированное меню)
-  color: $grey;
+  color: $color4-1;
 }
 //социальные иконки
 .fa-vk {
   color: $vk;
 }
 .fa-instagram {
-  color: $pink;
+  color: $color2;
 }
 .fa-facebook {
   color: $facebook;
 }
 .fa.sosial__icon:hover {
-  color: $dirty-blue;
+  color: $color1-1;
 }
 .fix-top__mail {
-  border-left: 1px solid $grey2;
-  border-right: 1px solid $grey2;
+  border-left: 1px solid $color4-2;
+  border-right: 1px solid $color4-2;
+}
+.main-menu__items a {
+  color: $color1;
+}
+.main-menu__item:after {
+  background-color: $color1;
+}
+.main-menu__item--mobile {
+  border-top: 1px solid $color1;
+}
+.main-menu__item--mobile a {
+  color: $color1;
+}
+/*main-screen*/
+.main__title {
+  color: $color3
 }

@@ -22,6 +22,9 @@
   .fix-top__mail {
     flex-grow: 1;
   }
+  .catalog {
+    right: 0;
+  }
 
 }
 @media screen and (min-width: 980px) {
@@ -38,10 +41,33 @@
   .fix-top__title {
     display: block;
   }
+  
 }
 @media screen and (min-width: 1200px) {
   .wrap {
     width: 1170px;
   }
+  .main-menu__item--desctop {
+    display: flex;
+  }
+  .main-screen nav {
+    display: flex;
+  }
+  .main-menu__items {
+    margin: 0;
+  }
+  .main-screen nav ul.hidden {
+    display: flex;
+  }
+  .main-menu__items {
+    border-top: none;
+  }
+  .main-menu__item:after {
+    content: none;
+  }
+
+
+
+
 }
 

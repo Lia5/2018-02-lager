@@ -4,16 +4,17 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: $black;
+	color: $color4;
 	font-size: 15px;
 	line-height: 1.2;
-	background: $white;
-	position: relative;
-	font-family: 'futura-book';
+	background: $color3;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  
 }
 
 p {
-	color: $black;
+	color: $color4;
 	margin: 0;
 	padding: 0;
 }
@@ -56,14 +57,14 @@ h6 {
 
 .section-title {
 	font-size: 42px;
-	color: $white;
+	color: $color3;
 	text-align: center;
 	padding-top: 80px;
 }
 button {
 	cursor: pointer;
 	border: none;
-	font-family: 'futura-book';
+  font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 700;
 }
 .parallax-window {
@@ -78,4 +79,7 @@ button {
 .wrap {
   display: flex;
   max-width: 1170px;
+}
+.hidden {
+  display: none;
 }

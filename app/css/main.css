@@ -409,6 +409,9 @@ template {
 a {
   color: #000000; }
 
+.fix-top {
+  background-color: #ffffff; }
+
 .fix-top__phone,
 .fix-top__mail {
   color: #778d9b; }
@@ -435,6 +438,22 @@ a {
   border-left: 1px solid #bababa;
   border-right: 1px solid #bababa; }
 
+.main-menu__items a {
+  color: #4196cb; }
+
+.main-menu__item:after {
+  background-color: #4196cb; }
+
+.main-menu__item--mobile {
+  border-top: 1px solid #4196cb; }
+
+.main-menu__item--mobile a {
+  color: #4196cb; }
+
+/*main-screen*/
+.main__title {
+  color: #ffffff; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -447,7 +466,7 @@ body {
   line-height: 1.2;
   background: #ffffff;
   position: relative;
-  font-family: 'futura-book'; }
+  font-family: 'Open Sans', sans-serif; }
 
 p {
   color: #000000;
@@ -498,7 +517,7 @@ h6 {
 button {
   cursor: pointer;
   border: none;
-  font-family: 'futura-book';
+  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 700; }
 
 .parallax-window {
@@ -516,17 +535,26 @@ button {
   display: flex;
   max-width: 1170px; }
 
+.hidden {
+  display: none; }
+
 @font-face {
   font-family: 'HelveticaNeueCyr-Bold';
   src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.eot") format("eot"), url("../fonts/HelveticaNeueCyr-Bold.otf") format("otf"), url("../fonts/HelveticaNeueCyr-Bold.svg") format("svg"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: normal; }
+  font-style: bold; }
 
 @font-face {
   font-family: 'HelveticaNeueCyr-Medium';
   src: url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Medium.eot") format("eot"), url("../fonts/HelveticaNeueCyr-Medium.otf") format("otf"), url("../fonts/HelveticaNeueCyr-Medium.svg") format("svg"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Constantia-Bold';
+  src: url("../fonts/Constantia-Bold.woff2") format("woff2"), url("../fonts/Constantia-Bold.eot") format("eot"), url("../fonts/Constantia-Bold.svg") format("svg"), url("../fonts/Constantia-Bold.ttf") format("truetype"), url("../fonts/Constantia-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2863,6 +2891,8 @@ button {
   clip: auto; }
 
 .fix-top {
+  position: fixed;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2940,7 +2970,6 @@ nav ul a {
   transition-duration: 0.5s;
   text-decoration: none;
   color: #ffffff;
-  font-size: 2em;
   line-height: 1.2;
   width: 100%;
   display: block; }
@@ -2957,13 +2986,83 @@ nav ul a:hover {
   height: 100vh;
   min-height: 300px;
   display: block;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
   position: absolute; }
+
+.main-menu__items {
+  text-transform: uppercase;
+  margin: 0; }
+
+.main-menu__items a {
+  padding: 12px; }
+
+.main-menu__item:after {
+  position: relative; }
+
+.main-menu__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 46%;
+  width: 30px;
+  height: 2px; }
+
+.main-menu__item--desctop:after {
+  content: none; }
+
+.main-menu__item--mobile {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+.main-menu__item--mobile:after {
+  content: none; }
+
+.main-menu__item--mobile .sosial-icons {
+  padding-right: 82px; }
+
+.main-menu__items {
+  border-top: 1px solid #4196cb; }
 
 /*end gamburger*/
 .fix-top__desctop,
 .fix-top__planshet {
   display: none; }
+
+.main-screen {
+  padding-top: 47px;
+  background: url("../img/1-main-screen-bg.png"), #4196cb;
+  height: 100vh;
+  min-height: 400px; }
+
+.main-menu__item--desctop {
+  padding: 9px; }
+
+.main-menu__item--desctop a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.logo {
+  width: 47px;
+  height: 47px; }
+
+.logo img {
+  width: 100%; }
+
+.main__title {
+  padding: 6px 9px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: 'Constantia-Bold', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic; }
+
+.main-screen nav {
+  z-index: 11;
+  position: relative; }
 
 @media screen and (min-width: 750px) {
   .wrap {
@@ -2993,7 +3092,9 @@ nav ul a:hover {
   .fix-top__mail {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
-    flex-grow: 1; } }
+    flex-grow: 1; }
+  .catalog {
+    right: 0; } }
 
 @media screen and (min-width: 980px) {
   .fix-top__planshet {
@@ -3009,7 +3110,25 @@ nav ul a:hover {
 
 @media screen and (min-width: 1200px) {
   .wrap {
-    width: 1170px; } }
+    width: 1170px; }
+  .main-menu__item--desctop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .main-screen nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .main-menu__items {
+    margin: 0; }
+  .main-screen nav ul.hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .main-menu__items {
+    border-top: none; }
+  .main-menu__item:after {
+    content: none; } }
 
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;*/
