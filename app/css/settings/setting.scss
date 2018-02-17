@@ -101,9 +101,18 @@ button {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.section__item {
+  margin-left: 16px;
+  margin-right: 16px;
+}
 .title-typical {
   padding-top: 13px;
-  padding-bottom: 13px;
+	padding-bottom: 13px;
+	text-align: center;
   font-size: 25px;
   font-family: 'Montserrat Alternates', sans-serif;
+}
+.subtitle-typical {
+	font-family: 'Constantia-Bold', 'Arial Narrow', Arial, sans-serif;
+	font-style: italic;
 }

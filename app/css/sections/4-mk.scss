@@ -1,0 +1,28 @@
+.mk {
+  background: url('../img/4-mk.png'), $color1;
+  background-position: center;
+  background-size: cover;
+}
+.mk__slider__item {
+  padding: 13px;
+  font-size: 11px;
+}
+.subtitle--mk {
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+.mk__slider__decription {
+  display: flex;
+  align-items: flex-end;
+}
+.mk__slider__decription p {
+  width: 80%;
+  margin-right: 10%;
+}
+.mk__slider__icon {
+  width: 10%;
+}
+.mk__slider__icon img {
+  width: 100%;
+  
+}

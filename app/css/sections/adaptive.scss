@@ -2,6 +2,12 @@
   .how__slider {
     font-size: 20px;
   }
+  .mk__slider__decription {
+    font-size: 20px;
+  }
+  .subtitle--mk {
+    font-size: 30px;
+  }
 }
 @media screen and (min-width: 750px) {
 
@@ -93,11 +99,13 @@
   .about__desctop p {
     padding-right: 10px;
   }
+  .title--about {
+    text-align: left;
+  }
   /*3*/
   .how__item {
     display: flex;
     padding: 13px;
-    
   }
   .how__pic {
     width: 50%;
@@ -125,6 +133,24 @@
   }
   .how__slider p {
     margin-bottom: 20px;
+  }
+  /*4*/
+  .mk .slick-track {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%!important;
+  }
+  .mk .section__item {
+     width: 45%!important;
+     margin-bottom: 42px;
+     margin-top: 42px;
+  }
+  .mk .mk__slider__item {
+    padding: 25px;
+    min-height: 238px;
+  } 
+  .mk .mk__slider__item:nth-child(2n) {
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
