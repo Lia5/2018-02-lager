@@ -17,7 +17,8 @@ $color4-1: rgba(0, 0, 0, 0.4); //grey
 $color4-2: #bababa; //grey2
 $vk: #5167e8;
 $facebook: #203097;
-
+$telegram: #6fb2df;
+$whatsapp: #82ce64;
 
 a { //ссылки
   color: $color4;
@@ -44,6 +45,12 @@ a { //ссылки
 }
 .fa-facebook {
   color: $facebook;
+}
+.fa-telegram {
+  color: $telegram;
+}
+.fa-whatsapp {
+    color: $whatsapp;
 }
 .fa.sosial__icon:hover {
   color: $color1-2;
@@ -81,10 +88,16 @@ a { //ссылки
   color: $color2;
   background-color: $color3;
 }
+@media screen and (min-width: 980px) {
+.btn--main a:hover {
+    border: 1px solid $color3;
+  }
+}
 @media screen and (min-width: 1200px) {
   .main-menu__item--desctop+.main-menu__items a {
     color: $color3;
   }
+  
 }
 
 /*end main screen*/
@@ -97,6 +110,15 @@ a { //ссылки
 }
 .item-color--txt-3 {
   color: $color3;
+}
+button.item-color--bg-1 {
+  background-color: $color1;
+}
+button.item-color--bg-2 {
+  background-color: $color2;
+} 
+button.item-color--bg-3 {
+  background-color: $color3;
 }
 /*кнопки btn*/
 .item-color--bg-1 a {
@@ -117,6 +139,17 @@ a { //ссылки
 .item-color--txt-3 a {
   color: $color3;
 }
+//border
+.item-color--brd-1 {
+  border: 1px solid $color1;
+}
+.item-color--brd-2 {
+  border: 1px solid $color2;
+}
+.item-color--brd-3 {
+  border: 1px solid $color3;
+}
+
 //наведение на кнопки btn:hover
 .btn-typical.item-color--bg-3.item-color--txt-1 a:hover {
   background-color: $color1;
@@ -167,4 +200,8 @@ a { //ссылки
 //5
 .has-question {
   background-color: $color3;
+}
+.btn--has-question:hover {
+  background-color: $color3;
+  color: $color2;
 }

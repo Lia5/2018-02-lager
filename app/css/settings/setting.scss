@@ -75,6 +75,10 @@ button {
 	font-size: 15px;
 	padding: 0 7px;
 }
+.sosial-icons img {
+	padding: 0 7px;
+	vertical-align: bottom;
+}
 .wrap {
   display: flex;
 	max-width: 1170px;
@@ -90,6 +94,11 @@ button {
   display: none;
 }
 .btn-typical a {
+	padding: 10px;
+  border-radius: 21px;
+  cursor: pointer;
+}
+button.btn-typical {
 	padding: 10px;
   border-radius: 21px;
   cursor: pointer;
@@ -115,4 +124,15 @@ button {
 .subtitle-typical {
 	font-family: 'Constantia-Bold', 'Arial Narrow', Arial, sans-serif;
 	font-style: italic;
+}
+.form-typical input {
+	padding: 10px;
+	border-radius: 21px;
+	font-size: 11px;
+	width: 100%;
+	margin: 3px 0;
+}
+.form-typical button {
+	width: 100%;
+	margin: 6px 0;
 }
