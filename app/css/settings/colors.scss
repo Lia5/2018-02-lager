@@ -59,6 +59,51 @@ a { //ссылки
   color: $color1;
 }
 /*main-screen*/
+.main__item__name {
+  background-color: $color3;
+}
 .main__title {
   color: $color3
+}
+.main__season {
+  color: $color1;
+}
+.main__season__name {
+  color: $color2;
+}
+.main__item__date {
+  color: $color2;
+  background-color: $color3;
+}
+@media screen and (min-width: 1200px) {
+  .main-menu__item--desctop+.main-menu__items a {
+    color: $color3;
+  }
+}
+
+/*end main screen*/
+
+/*кнопки btn*/
+.btn-color--bg-1 a {
+  background-color: $color1;
+}
+.btn-color--bg-2 a {
+  background-color: $color2;
+} 
+.btn-color--bg-3 a {
+  background-color: $color3;
+}
+.btn-color--txt-1 a {
+  color: $color1;
+}
+.btn-color--txt-2 a {
+  color: $color2;
+}
+.btn-color--txt-3 a {
+  color: $color3;
+}
+//наведение на кнопки btn:hover
+.btn-color--bg-3.btn-color--txt-1 a:hover {
+  background-color: $color1;
+  color: $color3;
 }

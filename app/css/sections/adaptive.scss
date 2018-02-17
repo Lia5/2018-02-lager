@@ -3,7 +3,6 @@
 }
 @media screen and (min-width: 750px) {
   .wrap {
-    margin: 0 auto;
     flex-grow: 1;
   }
   .fix-top__planshet,
@@ -25,6 +24,23 @@
   .catalog {
     right: 0;
   }
+  .main__item__name {
+    width: auto;
+    padding: 18px;
+    bottom: 110px;
+  }
+  .main__season {
+    font-size: 50px;
+  }
+  .main__season__name {
+    font-size: 33px;
+  }
+  .main__item__date {
+    width: auto;
+    bottom: 55px;
+    padding: 10px 20px;
+    font-size: 43px;
+  }
 
 }
 @media screen and (min-width: 980px) {
@@ -41,17 +57,42 @@
   .fix-top__title {
     display: block;
   }
-  
+  .main__items {
+    position: relative;
+  }
+  .main__item__name {
+    width: 653px;
+    padding: 18px;
+    bottom: 153px;
+  }
+  .main__season {
+    font-size: 77px;
+  }
+  .main__season__name {
+    font-size: 49px;
+  }
+  .main__item__date {
+    width: 426px;
+    bottom: 22px;
+    padding: 10px 20px;
+    font-size: 55px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .wrap {
     width: 1170px;
+    margin: 0 auto;
+  }
+  .fix-top {
+    padding-left: 0;
+    padding-right: 0;
   }
   .main-menu__item--desctop {
     display: flex;
   }
   .main-screen nav {
     display: flex;
+    justify-content: space-between;
   }
   .main-menu__items {
     margin: 0;
@@ -64,6 +105,25 @@
   }
   .main-menu__item:after {
     content: none;
+  }
+  .main__item__name {
+    width: 753px;
+    padding: 15px 36px 15px 50px;
+    bottom: 153px;
+    margin-left: -36px
+  }
+  .main__season {
+    font-size: 87px;
+  }
+  .main__season__name {
+    font-size: 49px;
+  }
+  .main__item__date {
+    width: 585px;    
+    bottom: 24px;
+    padding: 13px 27px;
+    font-size: 73px;
+    margin-right: -42px;
   }
 
 

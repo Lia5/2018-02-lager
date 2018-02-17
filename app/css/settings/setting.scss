@@ -78,8 +78,17 @@ button {
 }
 .wrap {
   display: flex;
-  max-width: 1170px;
+	max-width: 1170px;
+	flex-wrap: wrap;
 }
 .hidden {
   display: none;
+}
+.btn-form a {
+	padding: 10px;
+  border-radius: 21px;
+  cursor: pointer;
+}
+.btn--upper {
+	text-transform: uppercase;
 }
