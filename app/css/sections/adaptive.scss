@@ -1,10 +1,11 @@
 @media screen and (min-width: 480px) {
-
+  .how__slider {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 750px) {
-  .wrap {
-    flex-grow: 1;
-  }
+
+/*0*/
   .fix-top__planshet,
   .fix-top__desctop {
     justify-content: space-between;
@@ -24,6 +25,7 @@
   .catalog {
     right: 0;
   }
+/*1*/
   .main__item__name {
     width: auto;
     padding: 18px;
@@ -41,10 +43,12 @@
     padding: 10px 20px;
     font-size: 43px;
   }
+  /*3*/
+
 
 }
 @media screen and (min-width: 980px) {
-  
+/*0*/
   .fix-top__planshet {
     display: none;
   }
@@ -57,9 +61,8 @@
   .fix-top__title {
     display: block;
   }
-  .main__items {
-    position: relative;
-  }
+/*1*/
+
   .main__item__name {
     width: 653px;
     padding: 18px;
@@ -76,6 +79,52 @@
     bottom: 22px;
     padding: 10px 20px;
     font-size: 55px;
+  }
+  .btn--main {
+    position: relative;
+    bottom: -102px;
+    z-index: 2;
+  }
+    /*2*/
+  .about__slider .slick-track {
+    display: flex;
+    align-items: flex-end;
+  }
+  .about__desctop p {
+    padding-right: 10px;
+  }
+  /*3*/
+  .how__item {
+    display: flex;
+    padding: 13px;
+    
+  }
+  .how__pic {
+    width: 50%;
+    margin-right: 5%;
+  }
+  .how__pic+div{
+    width: 45%;
+  }
+  .how__slider {
+    font-size: 18px;
+  }
+  .how__slider .slick-track {
+    display: flex;
+    flex-direction: column; 
+
+  }
+  .how__slider .slick-slide {
+    width: 100%!important;
+  }
+  .title--how--mobile {
+    display: none;
+  }
+  .title--how--desctop {
+    display: block;
+  }
+  .how__slider p {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -123,11 +172,22 @@
     bottom: 24px;
     padding: 13px 27px;
     font-size: 73px;
-    margin-right: -42px;
+    margin-right: -6px;
+  }
+  .btn--main {
+    bottom: -122px;
+  }
+/*2*/
+  .title-typical {
+    font-size: 60px;
   }
 
 
+}
 
-
+@media screen and (min-width: 1300px) {
+  .main__item__date {
+    margin-right: -42px;
+  }
 }
 

@@ -1,10 +1,16 @@
 
 $color1: #4196cb; //blue
-$color1-1:#778d9b; //dirty-blue
+$color1-1:rgba(65, 150, 203, 0.5); //прозрачность 0,1
+$color1-2:#778d9b; //dirty-blue
+$color1-3: rgba(215, 236, 255, 0.8); //полупрозрачность синего
+
+
 
 $color2: #a81a5c; //pink
+$color2-1: rgba(168, 26, 92, 0.25); //pink//прозрачность 0,25
 
 $color3: #ffffff; //white
+$color3-1:rgba(255, 255, 255, 0.25); //прозрачность 0,25
 
 $color4: #000000; //black
 $color4-1: rgba(0, 0, 0, 0.4); //grey
@@ -21,10 +27,10 @@ a { //ссылки
 }
 .fix-top__phone, //цвет телефона (и трубки) в фиксированной верхней планке
 .fix-top__mail { //цвет почты (и конверта) в фиксированной верхней планке
-  color: $color1-1;  
+  color: $color1-2;  
 }
 .fix-top { //цвет нижней рамки фиксированного меню
- border-bottom: 1px solid $color1-1;
+ border-bottom: 1px solid $color1-2;
 }
 .fix-top__title {  // цвет надписи "сезоны" на десктопе (фиксированное меню)
   color: $color4-1;
@@ -40,7 +46,7 @@ a { //ссылки
   color: $facebook;
 }
 .fa.sosial__icon:hover {
-  color: $color1-1;
+  color: $color1-2;
 }
 .fix-top__mail {
   border-left: 1px solid $color4-2;
@@ -82,28 +88,75 @@ a { //ссылки
 }
 
 /*end main screen*/
-
-/*кнопки btn*/
-.btn-color--bg-1 a {
-  background-color: $color1;
-}
-.btn-color--bg-2 a {
-  background-color: $color2;
-} 
-.btn-color--bg-3 a {
-  background-color: $color3;
-}
-.btn-color--txt-1 a {
+/*текст*/
+.item-color--txt-1 {
   color: $color1;
 }
-.btn-color--txt-2 a {
+.item-color--txt-2 {
   color: $color2;
 }
-.btn-color--txt-3 a {
+.item-color--txt-3 {
+  color: $color3;
+}
+/*кнопки btn*/
+.item-color--bg-1 a {
+  background-color: $color1;
+}
+.item-color--bg-2 a {
+  background-color: $color2;
+} 
+.item-color--bg-3 a {
+  background-color: $color3;
+}
+.item-color--txt-1 a {
+  color: $color1;
+}
+.item-color--txt-2 a {
+  color: $color2;
+}
+.item-color--txt-3 a {
   color: $color3;
 }
 //наведение на кнопки btn:hover
-.btn-color--bg-3.btn-color--txt-1 a:hover {
+.btn-typical.item-color--bg-3.item-color--txt-1 a:hover {
   background-color: $color1;
   color: $color3;
+}
+//section 2
+.about {
+  background-color: $color1;
+}
+//dots in slider 
+  //color1
+.slider-dots--color-1 .slider--my-dots li.slick-active button:before {
+  background-color: $color1;
+}
+.slider-dots--color-1 .slider--my-dots li button:before {
+ background-color: $color1-1;
+}
+  //color2
+.slider-dots--color-2 .slider--my-dots li.slick-active button:before {
+  background-color: $color2;
+}
+.slider-dots--color-2 .slider--my-dots li button:before {
+ background-color: $color2-1;
+}
+  //color3
+.slider-dots--color-3 .slider--my-dots li.slick-active button:before {
+  background-color: $color3;
+}
+.slider-dots--color-3 .slider--my-dots li button:before {
+ background-color: $color3-1;
+}
+
+.how-overlay { 
+  background: $color1-3;
+}
+.how__slider {
+  background-color: $color3;
+}
+@media screen and (min-width: 980px) {
+  .how__item {
+    background-color: $color3;
+  }
 }

@@ -3,6 +3,8 @@
 @import "settings/normalize.scss";
 @import "settings/colors.scss";
 @import "settings/setting.scss";
+@import "settings/slick.scss";
+@import "settings/slick-theme.scss";
 
 @import "settings/fonts.scss";
 @import "settings/font-awesome.scss";
@@ -10,7 +12,8 @@
 @import "sections/fix-top.scss";
 @import "sections/1-main-screen.scss";
 @import "sections/2-about.scss";
-
+@import "sections/3-how.scss";
+@import "sections/4-mk.scss";
 
 @import "sections/adaptive.scss";
 
