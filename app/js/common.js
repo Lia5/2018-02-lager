@@ -59,6 +59,40 @@ $(function(){
     }
     ]
     });
+    $('.team__slider').slick({
+      infinite: false,
+      slidesToShow: 6,
+      slidesToScroll: 2,
+      dots: true,
+      dotsClass: "slider--my-dots",
+      arrows: true,
+      responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 980,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false
+      }
+    }
+    ]
+    });
 
     $(".phone-mask").mask("+7(999) 999-9999");
 

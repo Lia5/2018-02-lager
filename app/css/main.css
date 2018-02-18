@@ -555,7 +555,7 @@ button.item-color--bg-3 {
 .slider-dots--color-3 .slider--my-dots li button:before {
   background-color: rgba(255, 255, 255, 0.25); }
 
-.how-overlay {
+.pattern-overlay {
   background: rgba(215, 236, 255, 0.8); }
 
 .how__slider {
@@ -574,6 +574,13 @@ button.item-color--bg-3 {
 .btn--has-question:hover {
   background-color: #ffffff;
   color: #a81a5c; }
+
+.team__item {
+  background-color: #ffffff; }
+
+.team .slick-prev:before,
+.team .slick-next:before {
+  color: #4196cb; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -3550,7 +3557,7 @@ nav ul a:hover {
   opacity: .75;
   color: black; }
 
-.how {
+.pattern {
   background: url("../img/3-pattern.png");
   background-position: 0 0;
   background-repeat: repeat;
@@ -3620,6 +3627,30 @@ nav ul a:hover {
 .statistic__description {
   font-size: 12px;
   padding-bottom: 24px; }
+
+.team__slider {
+  padding-left: 24px;
+  padding-right: 24px; }
+
+.team__item {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.team__memder__foto img {
+  width: 100%; }
+
+.team__item__description {
+  padding: 12px; }
+
+.team__memder__name {
+  font-size: 16px; }
+
+.team__memder__position {
+  font-size: 11px; }
+
+.team .slick-prev:before,
+.team .slick-next:before {
+  font-size: 28px; }
 
 @media screen and (min-width: 480px) {
   .how__slider {
@@ -3844,11 +3875,19 @@ nav ul a:hover {
   .statistic__numeric {
     font-size: 60px; }
   .statistic__description {
-    font-size: 30px; } }
+    font-size: 30px; }
+  /*7*/
+  .team .slick-prev:before,
+  .team .slick-next:before {
+    font-size: 60px; }
+  .team .slick-next {
+    right: 25px; } }
 
 @media screen and (min-width: 1300px) {
   .main__item__date {
-    margin-right: -42px; } }
+    margin-right: -42px; }
+  .team .slick-next {
+    right: -25px; } }
 
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;*/

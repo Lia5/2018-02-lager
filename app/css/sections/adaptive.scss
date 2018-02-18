@@ -246,11 +246,22 @@
   .statistic__description {
     font-size: 30px;
   }
+  /*7*/
+  .team .slick-prev:before,
+  .team .slick-next:before {
+    font-size: 60px;
+  }
+  .team .slick-next {
+    right: 25px;
+  }
 }
 
 @media screen and (min-width: 1300px) {
   .main__item__date {
     margin-right: -42px;
+  }
+  .team .slick-next {
+    right: -25px;
   }
 }
 

@@ -182,7 +182,7 @@ button.item-color--bg-3 {
  background-color: $color3-1;
 }
 
-.how-overlay { 
+.pattern-overlay { 
   background: $color1-3;
 }
 .how__slider {
@@ -204,4 +204,12 @@ button.item-color--bg-3 {
 .btn--has-question:hover {
   background-color: $color3;
   color: $color2;
+}
+//7
+.team__item {
+  background-color: $color3;
+}
+.team .slick-prev:before,
+.team .slick-next:before {
+  color: $color1;
 }
