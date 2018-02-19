@@ -113,11 +113,49 @@ $(function(){
     }
     ]
     });
+    $('.tour__slider').slick({
+      arrows: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: true/*,,
+      centerMode: true,
+      centerPadding: '150px' 
+      responsive: [
+    {
+      breakpoint: 980,
+      settings: {
+        centerMode: true,
+        centerPadding: '10px',
+
+      }
+    }
+    ]*/
+    });
     $(".phone-mask").mask("+7(999) 999-9999");
-
-
+    /*
+   $('.slick-active').prev().toggleClass('mur');
+   $('.slick-active').next().toggleClass('mur2');*/
+   $('.sales__slider').slick({
+      settings: "unslick",
+      slidesToShow: 3,
+      responsive: [
+    {
+      breakpoint: 980,
+      settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        dotsClass: "slider--my-dots",
+        arrows: false
+      }
+    }
+    ]
+    });
 });   
 /*
+     
  $(window).resize(function(){
         var windowWidth = $(window).width();
         if(windowWidth > 992)$(".about__desctop").addClass("about__slider");

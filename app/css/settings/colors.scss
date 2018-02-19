@@ -16,6 +16,9 @@ $color3-2:rgba(255, 255, 255, 0.8); //прозрачность 0,8
 $color4: #000000; //black
 $color4-1: rgba(0, 0, 0, 0.4); //grey
 $color4-2: #bababa; //grey2
+$color4-3: rgba(0,0,0,0.2);
+
+
 $vk: #5167e8;
 $facebook: #203097;
 $telegram: #6fb2df;
@@ -221,10 +224,23 @@ button.item-color--bg-3 {
   color: $color3-2;
 }
   //9
-  .conditions__item {
-    background-color: $color3;
-  }
-  .btn-condition a:hover {
-    color: $color1;
-    background-color: $color3;
-  } 
+.conditions__item {
+  background-color: $color3;
+}
+.btn-condition a:hover {
+  color: $color1;
+  background-color: $color3;
+} 
+.tour__slider__decription {
+  background-color: $color3;
+}
+.btn--tour a:hover {
+  background-color: $color3;
+  color: $color1;
+}
+.tour__item__decription {
+  border-bottom: 1px solid $color1;
+}
+.shadow {
+  box-shadow: 0 0 10px $color4-3;
+}
