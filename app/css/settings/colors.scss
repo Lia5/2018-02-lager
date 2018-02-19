@@ -11,6 +11,7 @@ $color2-1: rgba(168, 26, 92, 0.25); //pink//прозрачность 0,25
 
 $color3: #ffffff; //white
 $color3-1:rgba(255, 255, 255, 0.25); //прозрачность 0,25
+$color3-2:rgba(255, 255, 255, 0.8); //прозрачность 0,8
 
 $color4: #000000; //black
 $color4-1: rgba(0, 0, 0, 0.4); //grey
@@ -209,7 +210,21 @@ button.item-color--bg-3 {
 .team__item {
   background-color: $color3;
 }
-.team .slick-prev:before,
-.team .slick-next:before {
+.section .slick-prev:before,
+.section .slick-next:before {
   color: $color1;
 }
+.routine {
+  background-color: $color1;
+}
+.routine__about {
+  color: $color3-2;
+}
+  //9
+  .conditions__item {
+    background-color: $color3;
+  }
+  .btn-condition a:hover {
+    color: $color1;
+    background-color: $color3;
+  } 

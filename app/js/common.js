@@ -93,7 +93,26 @@ $(function(){
     }
     ]
     });
-
+    $('.conditions__slider').slick({
+      arrows: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: true,
+      responsive: [
+    {
+      breakpoint: 980,
+      settings: {
+        
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        dotsClass: "slider--my-dots",
+        arrows: false
+      }
+    }
+    ]
+    });
     $(".phone-mask").mask("+7(999) 999-9999");
 
 

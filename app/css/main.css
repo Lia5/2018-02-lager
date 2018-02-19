@@ -578,9 +578,22 @@ button.item-color--bg-3 {
 .team__item {
   background-color: #ffffff; }
 
-.team .slick-prev:before,
-.team .slick-next:before {
+.section .slick-prev:before,
+.section .slick-next:before {
   color: #4196cb; }
+
+.routine {
+  background-color: #4196cb; }
+
+.routine__about {
+  color: rgba(255, 255, 255, 0.8); }
+
+.conditions__item {
+  background-color: #ffffff; }
+
+.btn-condition a:hover {
+  color: #4196cb;
+  background-color: #ffffff; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -3652,6 +3665,93 @@ nav ul a:hover {
 .team .slick-next:before {
   font-size: 28px; }
 
+.btn-routine {
+  margin: 20px auto;
+  text-align: center; }
+
+.btn-routine a {
+  padding-left: 35px;
+  padding-right: 35px; }
+
+.routine__about {
+  font-size: 13px;
+  text-align: center;
+  margin: 20px auto;
+  padding-top: 20px;
+  max-width: 216px; }
+
+.conditions .conditions__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.conditions__item__foto {
+  width: 50%;
+  overflow: hidden; }
+
+.conditions__lists {
+  text-align: center; }
+
+.conditions__item__foto img {
+  width: 100%;
+  min-height: 100%; }
+
+.conditions__item1 img {
+  width: 130%; }
+
+.conditions__item__description {
+  width: 50%;
+  padding: 14px; }
+
+.conditions__list {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+.conditions__list__img {
+  width: 33px;
+  height: 33px;
+  margin: 0 auto; }
+
+.conditions__list__img img {
+  width: 100%; }
+
+.conditions .conditions__item2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.conditions__item2 .conditions__item__foto {
+  width: 100%; }
+
+.conditions__item2 .conditions__item__description {
+  width: 100%; }
+
+.conditions__item__description p {
+  font-size: 10px; }
+
+.conditions__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 66px auto;
+  font-size: 26px; }
+
+.conditions__buttons a {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.btn--condition {
+  margin: 20px; }
+
 @media screen and (min-width: 480px) {
   .how__slider {
     font-size: 20px; }
@@ -3706,7 +3806,10 @@ nav ul a:hover {
     font-size: 43px; }
   /*5*/
   .has-question__form {
-    width: 50%; } }
+    width: 50%; }
+  /*9*/
+  .conditions__item__description p {
+    font-size: 20px; } }
 
 @media screen and (min-width: 980px) {
   /*0*/
@@ -3800,7 +3903,43 @@ nav ul a:hover {
   .statistic__numeric {
     font-size: 40px; }
   .statistic__description {
-    font-size: 20px; } }
+    font-size: 20px; }
+  /*8*/
+  .routine__about {
+    font-size: 25px;
+    max-width: 420px; }
+  /*9*/
+  .conditions__slider {
+    width: 80%;
+    margin: 0 auto; }
+  .conditions__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left; }
+  .conditions__list__img {
+    width: 50px;
+    height: 50px; }
+  .conditions__list:nth-child(3n) .conditions__list__img {
+    width: 74px; }
+  .conditions__list p {
+    padding-left: 10px; }
+  .conditions__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 40px auto;
+    font-size: 26px; }
+  .conditions__buttons a {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .btn--condition {
+    margin: 20px; } }
 
 @media screen and (min-width: 1200px) {
   .wrap {
@@ -3877,16 +4016,18 @@ nav ul a:hover {
   .statistic__description {
     font-size: 30px; }
   /*7*/
-  .team .slick-prev:before,
-  .team .slick-next:before {
+  .section .slick-prev:before,
+  .section .slick-next:before {
     font-size: 60px; }
-  .team .slick-next {
-    right: 25px; } }
+  .section .slick-next {
+    right: 25px; }
+  .section .slick-prev {
+    left: -64px; } }
 
 @media screen and (min-width: 1300px) {
   .main__item__date {
     margin-right: -42px; }
-  .team .slick-next {
+  .section .slick-next {
     right: -25px; } }
 
 /*font-family: 'Open Sans', sans-serif;

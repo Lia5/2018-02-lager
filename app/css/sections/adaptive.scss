@@ -57,6 +57,10 @@
   .has-question__form {
     width: 50%;
   }
+  /*9*/
+  .conditions__item__description p {
+    font-size: 20px;
+  }
 
 }
 @media screen and (min-width: 980px) {
@@ -166,6 +170,44 @@
   .statistic__description {
     font-size: 20px;
   }
+  /*8*/
+  .routine__about {
+    font-size: 25px;
+    max-width: 420px;
+  }
+  /*9*/
+  .conditions__slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .conditions__list {
+    display: flex;
+    text-align: left;
+  }
+  .conditions__list__img {
+    width: 50px;
+    height: 50px;
+  }
+  .conditions__list:nth-child(3n) .conditions__list__img {
+    width: 74px;
+  }
+  .conditions__list p {
+    padding-left: 10px;
+  }
+  .conditions__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px auto;
+    font-size: 26px;
+  }
+  .conditions__buttons a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .btn--condition {
+     margin: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .wrap {
@@ -247,20 +289,24 @@
     font-size: 30px;
   }
   /*7*/
-  .team .slick-prev:before,
-  .team .slick-next:before {
+  .section .slick-prev:before,
+  .section .slick-next:before {
     font-size: 60px;
   }
-  .team .slick-next {
+  .section .slick-next {
     right: 25px;
+  } 
+  .section .slick-prev {
+    left: -64px;
   }
+  
 }
 
 @media screen and (min-width: 1300px) {
   .main__item__date {
     margin-right: -42px;
   }
-  .team .slick-next {
+  .section .slick-next {
     right: -25px;
   }
 }
