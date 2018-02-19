@@ -216,6 +216,13 @@
   .mk .mk__slider__item:nth-child(2n) {
     margin-left: auto;
   }
+  /*5*/
+  .form-typical input {
+    font-size: 22px;
+  }
+  .form-typical input {
+    margin: 12px 0;
+  }
   /*6*/
   .statistic__numeric {
     font-size: 40px;
@@ -284,6 +291,27 @@ div[data-slick-index="1"] {
   .sales__slider__item {
     min-height: 166px;
   }
+  /*12*/
+  .manuals__wrap {
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .title--manuals {
+    font-size: 40px;
+  }
+  .subtitle--manuals {
+    font-size: 22px;
+  }
+  .form-typical button {
+    margin: 25px 0;
+  }
+
+
+  /*popup*/
+  .popup__manuals__txt {
+    font-size: 20px;
+  }
 
 }
 @media screen and (min-width: 1200px) {
@@ -338,7 +366,7 @@ div[data-slick-index="1"] {
   }
 
 /*5*/
-  .form-typical {
+  .has-question__form {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -346,14 +374,13 @@ div[data-slick-index="1"] {
     justify-content: center;
   }
 
-  .form-typical input {
+  .has-question__form input {
     width: 40%;
     margin-left: 1%;
     margin-right: 1%;
   }
-  .form-typical button {
+  .has-question__form button {
     width: 33%;
-    margin: 25px 0;
   }
   /*6*/
   .statistic__numeric {
