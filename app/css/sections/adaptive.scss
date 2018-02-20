@@ -317,7 +317,23 @@ div[data-slick-index="1"] {
   .qa__item {
     max-width: 290px;
   }
-
+/*14*/
+.title--reviews__text {
+  font-size: 32px;;
+}
+  .reviews .slick-track {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__item {
+    width: 100%!important;
+    padding: 20px 18px 18px 98px;
+    text-align: left;
+  }
+  .reviews__avatar {
+    left: 25px;
+    top: auto;
+  }
 
   /*popup*/
   .popup__manuals__txt {
@@ -413,7 +429,17 @@ div[data-slick-index="1"] {
   }
   /*13*/
   .qa__item {
-    max-width: 290px;
+    max-width: 350px;
+  }
+  /*14*/
+  .reviews__name {
+    font-size: 15px;
+  }
+  .reviews__data {
+    font-size: 15px;
+  }
+  .reviews__slider__decription {
+    font-size: 15px;
   }
   
 }

@@ -93,10 +93,12 @@ button {
 .hidden {
   display: none;
 }
-.btn-typical a {
+.btn-typical {
 	padding: 10px;
-  border-radius: 21px;
-  cursor: pointer;
+  border-radius: 25px;
+	cursor: pointer;
+	display: block;
+	text-align: center;
 }
 button.btn-typical {
 	padding: 10px;

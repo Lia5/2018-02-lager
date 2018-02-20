@@ -189,6 +189,28 @@ $(function(){
       $(this).parent().prev().removeClass("hidden");
     });
 
+    $('.reviews__slider').slick({
+      settings: "unslick",
+      slidesToShow: 3,
+      responsive: [
+      
+    {
+      breakpoint: 980,
+      settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        dotsClass: "slider--my-dots",
+        arrows: false
+
+      }
+    }
+    ]
+    });
+
+
+
 });   
 /*
      

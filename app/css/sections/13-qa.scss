@@ -4,7 +4,7 @@
 }
 .qa__item {
   padding: 13px 17px;
-  margin: 15px;
+  margin: 15px 0;
 }
 .qa .qa__slider {
   margin-bottom: 81px;
@@ -36,6 +36,7 @@
 .qa__item__btn {
   margin: 20px auto ;
   text-align: center;
+  max-width: 183px;
 }
 .qa__item__btn__roll  {
   background-color: $color1;

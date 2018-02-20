@@ -3,7 +3,7 @@ $color1: #4196cb; //blue
 $color1-1:rgba(65, 150, 203, 0.5); //прозрачность 0,1
 $color1-2:#778d9b; //dirty-blue
 $color1-3: rgba(215, 236, 255, 0.8); //полупрозрачность синего
-
+$color1-4: #6988b7;
 
 
 $color2: #a81a5c; //pink
@@ -125,22 +125,22 @@ button.item-color--bg-3 {
   background-color: $color3;
 }
 /*кнопки btn*/
-.item-color--bg-1 a {
+.item-color--bg-1 {
   background-color: $color1;
 }
-.item-color--bg-2 a {
+.item-color--bg-2 {
   background-color: $color2;
 } 
-.item-color--bg-3 a {
+.item-color--bg-3 {
   background-color: $color3;
 }
-.item-color--txt-1 a {
+.item-color--txt-1 {
   color: $color1;
 }
-.item-color--txt-2 a {
+.item-color--txt-2 {
   color: $color2;
 }
-.item-color--txt-3 a {
+.item-color--txt-3 {
   color: $color3;
 }
 //border
@@ -155,7 +155,7 @@ button.item-color--bg-3 {
 }
 
 //наведение на кнопки btn:hover
-.btn-typical.item-color--bg-3.item-color--txt-1 a:hover {
+.btn-typical.item-color--bg-3.item-color--txt-1:hover {
   background-color: $color1;
   color: $color3;
 }
@@ -256,4 +256,27 @@ button.item-color--bg-3 {
 }
 .qa__item {
   background-color: $color3;
+}
+/*14*/
+
+.title--reviews__arrow {
+  background-color: $color3-1;
+}
+.title--reviews__text {
+  color: $color3-2;
+}
+.reviews__item {
+  background-color: $color3;
+}
+
+.reviews__feedback {
+  background-color: $color3;
+}
+.reviews__feedback:hover {
+  background-color: $color1;
+  color: $color3;
+}
+.reviews__feedback-vk {
+  color: $color3;
+  background-color: $color1;
 }
