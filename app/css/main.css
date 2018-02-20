@@ -619,6 +619,9 @@ button.item-color--bg-3 {
 .typical__popup {
   background-color: #ffffff; }
 
+.qa__item {
+  background-color: #ffffff; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -3934,6 +3937,53 @@ nav ul a:hover {
   padding-top: 11px;
   padding-bottom: 11px; }
 
+.qa {
+  padding-left: 24px;
+  padding-right: 24px; }
+
+.qa__item {
+  padding: 13px 17px;
+  margin: 15px; }
+
+.qa .qa__slider {
+  margin-bottom: 81px; }
+
+.qa__item__icon {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding-top: 3px;
+  text-align: center;
+  font-size: 19px;
+  border: 3px solid #4196cb;
+  font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700; }
+
+.qa__item__question {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 13px;
+  margin-bottom: 35px; }
+
+.qa__item__answer__txt {
+  font-size: 13px;
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  transition: all .6s;
+  margin-bottom: 35px; }
+
+.qa__item__btn {
+  margin: 20px auto;
+  text-align: center; }
+
+.qa__item__btn__roll {
+  background-color: #4196cb;
+  max-width: 125px;
+  display: block;
+  border-radius: 20px;
+  padding: 10px; }
+
 /*popup__manuals*/
 .popup__manuals {
   margin-left: 24px;
@@ -4045,7 +4095,8 @@ nav ul a:hover {
   .tour__social {
     padding: 10px 30px; }
   .tour__social__icons .sosial__icon {
-    font-size: 26px; } }
+    font-size: 26px; }
+  /*13*/ }
 
 @media screen and (min-width: 980px) {
   /*0*/
@@ -4147,6 +4198,10 @@ nav ul a:hover {
     font-size: 40px; }
   .statistic__description {
     font-size: 20px; }
+  /*7*/
+  .team {
+    padding-left: 34px;
+    padding-right: 34px; }
   /*8*/
   .routine__about {
     font-size: 25px;
@@ -4211,6 +4266,9 @@ div[data-slick-index="1"] {
     font-size: 22px; }
   .form-typical button {
     margin: 25px 0; }
+  /*13*/
+  .qa__item {
+    max-width: 290px; }
   /*popup*/
   .popup__manuals__txt {
     font-size: 20px; } }
@@ -4292,7 +4350,10 @@ div[data-slick-index="1"] {
   .section .slick-next {
     right: 25px; }
   .section .slick-prev {
-    left: -64px; } }
+    left: -64px; }
+  /*13*/
+  .qa__item {
+    max-width: 290px; } }
 
 @media screen and (min-width: 1300px) {
   .main__item__date {

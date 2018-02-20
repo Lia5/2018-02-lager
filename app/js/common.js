@@ -113,6 +113,7 @@ $(function(){
     }
     ]
     });
+    
     $('.tour__slider').slick({
       arrows: true,
       slidesToShow: 1,
@@ -153,6 +154,41 @@ $(function(){
     }
     ]
     });
+    $('.qa__slider').slick({
+      settings: "unslick",
+      slidesToShow: 3,
+      rows: 3,
+      slidesPerRow: 1,
+      arrows: false,
+      responsive: [
+      
+    {
+      breakpoint: 980,
+      settings: {
+        rows: 2,
+        slidesPerRow: 1,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        dotsClass: "slider--my-dots",
+              
+        
+      }
+    }
+    ]
+    });
+
+    $(".qa__item__btn__answer").on('click', function() {
+      $(this).next().removeClass("hidden");
+      $(this).addClass("hidden");
+    });
+    $(".qa__item__btn__roll").on('click', function() {
+      $('.qa__item__answer').addClass("hidden");
+     // $('.qa__item__btn__answer').removeClass("hidden");
+      $(this).parent().prev().removeClass("hidden");
+    });
+
 });   
 /*
      

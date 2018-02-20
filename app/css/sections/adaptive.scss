@@ -110,6 +110,8 @@
   .tour__social__icons .sosial__icon {
     font-size: 26px;
   }
+  /*13*/
+  
 
 
 }
@@ -230,6 +232,11 @@
   .statistic__description {
     font-size: 20px;
   }
+  /*7*/
+  .team {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
   /*8*/
   .routine__about {
     font-size: 25px;
@@ -305,6 +312,10 @@ div[data-slick-index="1"] {
   }
   .form-typical button {
     margin: 25px 0;
+  }
+  /*13*/
+  .qa__item {
+    max-width: 290px;
   }
 
 
@@ -399,6 +410,10 @@ div[data-slick-index="1"] {
   } 
   .section .slick-prev {
     left: -64px;
+  }
+  /*13*/
+  .qa__item {
+    max-width: 290px;
   }
   
 }
