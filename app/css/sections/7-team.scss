@@ -23,3 +23,17 @@
 .team .slick-next:before {
   font-size: 28px;
 }
+
+/*anim*/
+.team__item.team__item--full {
+  display: flex;
+}
+.team__item--full .team__item__description {
+  order: -1;
+}
+.team__item--full .team__memder__foto {
+  width: 30%;
+}
+.team__item--full .team__item__description {
+  width: 70%;
+}

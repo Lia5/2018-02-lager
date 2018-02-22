@@ -210,7 +210,74 @@ $(function(){
     });
 
 
+    // MAP
+    
+ ymaps.ready(init);
+ function init(){     
+    var myMap = new ymaps.Map("map", {
+         center: [55.729012, 37.629215],
+         zoom: 15
+     }),
+     
+     // Создаем метку с помощью вспомогательного класса.
+     myPlacemark1 = new ymaps.Placemark([55.729012, 37.629215], {
+      // Свойства.
+      // Содержимое иконки, балуна и хинта.
+      balloonContentBody: 'Академия Героев',
+     balloonContentFooter: 'Москва, ул.Зацепа 41, офис 107',
+     hintContent: 'Академия Героев'
+  }, {
+      // Опции.
+      // Своё изображение иконки метки.
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: 'img/icons/marker.png',
+      // Размеры метки.
+      iconImageSize: [66, 100]
+  });
 
+// Добавляем все метки на карту.
+myMap.geoObjects.add(myPlacemark1);
+myMap.behaviors.disable('scrollZoom');
+
+ };
+  // MAP
+/*
+  function initMap() {
+    var centerLatLng = new google.maps.LatLng(55.729012, 37.629215);
+    var mapOptions = {
+        center: centerLatLng,
+        zoom: 15,               // Зум по умолчанию. Возможные значения от 0 до 21
+        navigationControlOptions: {
+          style: google.maps.NavigationControlStyle.SMALL
+        },
+         mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    map.scrollwheel=true;
+  map.setOptions({ mapTypeControl:true});
+
+  var locations = [
+	{
+		title: 'Академия Героев',
+		position: {lat: 55.729012, lng: 37.629215},
+		icon: {
+			url: "img/icons/marker.png",
+			scaledSize: new google.maps.Size(66, 100)
+		}
+	}
+];
+locations.forEach( function( element ) {
+	var marker = new google.maps.Marker({
+			position: element.position,
+			map: map,
+			title: element.title,
+			icon: element.icon,
+		});
+	});	
+}
+google.maps.event.addDomListener(window, "load", initMap);
+*/
 });   
 /*
      
