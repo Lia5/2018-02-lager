@@ -25,12 +25,15 @@
 }
 
 /*anim*/
-.team__slider-for.hidden {
-  display: none;
-}
 .team__slider-for.team__slider-for-visible {
-  display: block;
+  height: auto;
+  visibility: visible;
 }
+.team__slider-for.hidden {
+  height: 0;
+  visibility: hidden;
+}
+
 
 .team-icon svg {
   width: 34px;

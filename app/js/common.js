@@ -60,14 +60,6 @@ $(function(){
     ]
     });
 
-    $('.team__slider-for').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.team__slider',
-    });
-
 
 
     $('.team__slider').slick({
@@ -110,6 +102,34 @@ $(function(){
     }
     ]
     });
+      $('.team__slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.team__slider',
+      });
+    $(".team__slider .team__item").on('click', function() {
+
+      $('.team__slider-for-visible').removeClass("hidden");
+      
+   /*   $('.team__slider-for').slick('unslick'); /* ONLY remove the classes and handlers added on initialize */
+     
+  /*    $('.team__slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.team__slider',
+      }); /* Initialize the slick again */
+ /*      $(".team__slider-for").slick('reinit');
+  
+*/
+    
+  
+    });
+
+
     $('.conditions__slider').slick({
       arrows: true,
       slidesToShow: 1,
