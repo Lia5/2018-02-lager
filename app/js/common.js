@@ -63,8 +63,7 @@ $(function(){
 
 
     $('.team__slider').slick({
-
-      slidesToShow: 4,
+      slidesToShow: 6,
       slidesToScroll: 1,
       asNavFor: '.team__slider-for',
       dots: true,
@@ -312,7 +311,35 @@ locations.forEach( function( element ) {
 }
 google.maps.event.addDomListener(window, "load", initMap);
 */
+
+
+
+/*popup*/
+//----- OPEN
+$('[data-popup-open]').on('click', function(e)  {
+  var targeted_popup_class = jQuery(this).attr('data-popup-open');
+  $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+
+  e.preventDefault();
+});
+
+//----- CLOSE
+$('[data-popup-close]').on('click', function(e)  {
+  var targeted_popup_class = jQuery(this).attr('data-popup-close');
+  $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+  e.preventDefault();
+  
+});
 });   
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+  var div = $(".typical__popup"); // тут указываем ID элемента
+  if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+    div.parent().hide(); // скрываем его
+  }
+});
 /*
      
  $(window).resize(function(){

@@ -380,6 +380,13 @@ div[data-slick-index="1"] {
   .popup__manuals__txt {
     font-size: 20px;
   }
+  /*popup*/
+  .popup__question__txt {
+    font-size: 20px;
+  }
+
+
+
 
 }
 @media screen and (min-width: 1200px) {
@@ -482,7 +489,13 @@ div[data-slick-index="1"] {
   .reviews__slider__decription {
     font-size: 15px;
   }
-  
+  /*popup*/
+  .popup-scroll{
+    max-height: 570px;
+  }
+  .popup__routine__txt {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -491,6 +504,9 @@ div[data-slick-index="1"] {
   }
   .section .slick-next {
     right: -25px;
+  }
+  .popup-scroll{
+    max-height: 100%;
   }
 }
 

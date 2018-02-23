@@ -1,8 +1,36 @@
-/*popup__manuals*/
-.popup__manuals {
-  margin-left: 24px;
-  margin-right: 24px;
+/*5 popup__question*/
+.sosial-icons__question__popup .sosial__icon {
+  font-size: 35px;
+  text-align: center;
+
 }
+.sosial-icons__question__popup {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+/*end popup__question*/
+
+/*8 routine*/
+.title--routine__popup {
+  padding-right: 45px;
+  font-size: 25px;
+}
+.popup__routine__txt {
+  padding: 9px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.popup__routine__part-day {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+
+/*end routine*/
+
+/* 12 popup__manuals*/
+
 .popup__manuals__txt {
   font-style: italic;
   font-size: 13px;
@@ -20,3 +48,29 @@
   font-size: 23px;
 }
 /*end popup__manuals*/
+
+/* popup__soc-qa*/
+
+.soc-qa__item {
+  display: inline-block;
+  padding-right: 7px;
+  vertical-align: middle;
+}
+.popup__soc-qa {
+  max-width: 290px;
+  border-radius: 55px;
+  padding: 6px;
+
+}
+.popup-close__soc-qa {
+  position: static;
+  position: relative;
+  top: auto;
+  right: auto;
+  font-size: 21px;
+  padding: 1px;
+}
+.popup-close:before, .popup-close:after {
+  background: $color2;
+}
+/*end popup__soc-qa*/

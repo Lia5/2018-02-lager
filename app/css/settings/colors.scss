@@ -292,3 +292,11 @@ button.item-color--bg-3 {
 .contacts__icon {
   fill: $color3;
 }
+
+/*popup*/
+.popup__routine__txt {
+  border-left: 1px solid $color4-2;
+}
+.popup__routine__part-day {
+  border-bottom: 1px dotted $color4-2;
+}
