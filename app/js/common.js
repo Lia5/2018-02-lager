@@ -110,9 +110,7 @@ $(function(){
         asNavFor: '.team__slider',
       });
     $(".team__slider .team__item").on('click', function() {
-
       $('.team__slider-for-visible').removeClass("hidden");
-      
    /*   $('.team__slider-for').slick('unslick'); /* ONLY remove the classes and handlers added on initialize */
      
   /*    $('.team__slider-for').slick({
@@ -123,7 +121,6 @@ $(function(){
         asNavFor: '.team__slider',
       }); /* Initialize the slick again */
  /*      $(".team__slider-for").slick('reinit');
-  
 */
     
   
