@@ -59,19 +59,34 @@ $(function(){
     }
     ]
     });
+
+    $('.team__slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.team__slider',
+    });
+
+
+
     $('.team__slider').slick({
-      infinite: false,
-      slidesToShow: 6,
-      slidesToScroll: 2,
+
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.team__slider-for',
       dots: true,
       dotsClass: "slider--my-dots",
       arrows: true,
+      centerMode: true,
+      focusOnSelect: true,
       responsive: [
     {
       breakpoint: 1200,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
+        asNavFor: '.team__slider-for',
         arrows: false
       }
     },
@@ -79,7 +94,8 @@ $(function(){
       breakpoint: 980,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
+        asNavFor: '.team__slider-for',
         arrows: false
       }
     },
@@ -87,7 +103,8 @@ $(function(){
       breakpoint: 750,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
+        asNavFor: '.team__slider-for',
         arrows: false
       }
     }

@@ -12,6 +12,15 @@
   .statistic-items {
     padding-left: 64%;
   }
+  /*7*/
+  .team__item--full>.team__item__description {
+    position: relative;
+    padding-bottom: 12px;
+  }
+  .team__item__description--full-mob {
+    position: static;
+    width: auto;
+  }
   /*10*/
   .tour__slider__item {
     padding-left: 50px;
@@ -92,9 +101,22 @@
   .has-question__form {
     width: 50%;
   }
+  /*7*/
+  .team__item__description--full {
+    font-size: 17px;
+  } 
+  .team__slider-for-visible .sosial__icon {
+    font-size: 26px;
+  }
   /*9*/
   .conditions__item__description p {
     font-size: 20px;
+  }
+  .team__memder__name {
+    font-size: 25px;
+  }
+  .team__memder__position {
+    font-size: 17px;
   }
   /*10*/
   .tour__slider__item {
@@ -124,6 +146,8 @@
   .contacts__item {
     width: 50%;
   }
+ 
+
 
 }
 @media screen and (min-width: 980px) {
@@ -247,6 +271,12 @@
   .team {
     padding-left: 34px;
     padding-right: 34px;
+  }
+  .team__slider-for-visible .slick-track {
+    display: flex;
+  }
+  .team__item.team__item--full {
+    width: 850px;
   }
   /*8*/
   .routine__about {

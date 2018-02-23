@@ -588,6 +588,9 @@ button.item-color--bg-3 {
 .routine__about {
   color: rgba(255, 255, 255, 0.8); }
 
+.team-icon--color {
+  fill: #4196cb; }
+
 .conditions__item {
   background-color: #ffffff; }
 
@@ -648,6 +651,9 @@ button.item-color--bg-3 {
 
 .contacts__items a {
   color: #ffffff; }
+
+.contacts__icon {
+  fill: #ffffff; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -3743,21 +3749,62 @@ nav ul a:hover {
   font-size: 28px; }
 
 /*anim*/
+.team__slider-for.hidden {
+  display: none; }
+
+.team__slider-for.team__slider-for-visible {
+  display: block; }
+
+.team-icon svg {
+  width: 34px;
+  height: 34px; }
+
+.team__item--full .team__item__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px; }
+
 .team__item.team__item--full {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto; }
 
-.team__item--full .team__item__description {
+.team__item__description--full {
+  font-size: 10px; }
+
+.team__item--full > .item--full {
+  padding: 12px;
+  margin: 10px auto; }
+
+.team__item--full > .team__item__description {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
-  order: -1; }
+  order: -1;
+  width: 67%;
+  position: relative;
+  padding-bottom: 100px; }
+
+.team__item__description--full-mob {
+  position: absolute;
+  width: 130%; }
 
 .team__item--full .team__memder__foto {
-  width: 30%; }
+  width: 32%;
+  margin-top: 17px;
+  margin-right: 1%;
+  margin-bottom: 17px; }
 
-.team__item--full .team__item__description {
-  width: 70%; }
+.sosial-icons.item--full {
+  margin: 13px 9px;
+  text-align: center; }
+
+.team__slider-for-visible .sosial-icons {
+  margin: 10px auto;
+  text-align: center; }
 
 .btn-routine {
   margin: 20px auto;
@@ -4132,9 +4179,6 @@ nav ul a:hover {
   width: 34px;
   height: 34px; }
 
-.contacts__icon {
-  fill: #ffffff; }
-
 #map {
   width: 100%;
   height: 746px; }
@@ -4171,6 +4215,13 @@ nav ul a:hover {
   /*6*/
   .statistic-items {
     padding-left: 64%; }
+  /*7*/
+  .team__item--full > .team__item__description {
+    position: relative;
+    padding-bottom: 12px; }
+  .team__item__description--full-mob {
+    position: static;
+    width: auto; }
   /*10*/
   .tour__slider__item {
     padding-left: 50px;
@@ -4238,9 +4289,18 @@ nav ul a:hover {
   /*5*/
   .has-question__form {
     width: 50%; }
+  /*7*/
+  .team__item__description--full {
+    font-size: 17px; }
+  .team__slider-for-visible .sosial__icon {
+    font-size: 26px; }
   /*9*/
   .conditions__item__description p {
     font-size: 20px; }
+  .team__memder__name {
+    font-size: 25px; }
+  .team__memder__position {
+    font-size: 17px; }
   /*10*/
   .tour__slider__item {
     padding-left: 100px;
@@ -4373,6 +4433,12 @@ nav ul a:hover {
   .team {
     padding-left: 34px;
     padding-right: 34px; }
+  .team__slider-for-visible .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .team__item.team__item--full {
+    width: 850px; }
   /*8*/
   .routine__about {
     font-size: 25px;

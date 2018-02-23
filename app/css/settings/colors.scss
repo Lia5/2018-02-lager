@@ -223,6 +223,9 @@ button.item-color--bg-3 {
 .routine__about {
   color: $color3-2;
 }
+.team-icon--color {
+  fill: $color1;
+}
   //9
 .conditions__item {
   background-color: $color3;
@@ -285,4 +288,7 @@ button.item-color--bg-3 {
 }
 .contacts__items a {
   color: $color3;
+}
+.contacts__icon {
+  fill: $color3;
 }
