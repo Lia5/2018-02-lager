@@ -250,8 +250,11 @@
     padding: 25px;
     min-height: 238px;
   } 
-  .mk .mk__slider__item:nth-child(2n) {
+  /*.mk .mk__slider__item:nth-child(2n) {
     margin-left: auto;
+  }*/
+  .mk__slider__item:nth-child(3) {
+    order: 1;
   }
   /*5*/
   .form-typical input {

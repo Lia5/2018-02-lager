@@ -69,7 +69,6 @@ $(function(){
       dots: true,
       dotsClass: "slider--my-dots",
       arrows: true,
-      centerMode: true,
       focusOnSelect: true,
       responsive: [
     {
