@@ -629,8 +629,11 @@ button.item-color--bg-3 {
 .title--reviews__arrow {
   background-color: rgba(255, 255, 255, 0.25); }
 
-.title--reviews__text {
+.not-activ-title {
   color: rgba(255, 255, 255, 0.8); }
+
+.active-tab > .not-activ-title {
+  color: #ffffff; }
 
 .reviews__item {
   background-color: #ffffff; }
@@ -905,42 +908,20 @@ button.btn-typical {
   display: none; }
 
 /*tabs*/
-.tabs {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  border-bottom: 1px solid #999; }
+.tabs__content {
+  display: none;
+  /* по умолчанию прячем все блоки */ }
 
-.tabs li {
-  float: left;
-  border: 1px solid #999;
-  border-bottom: none;
-  background: #e0e0e0; }
-
-.tabs li a {
+.tabs__content.active-tab {
   display: block;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #000;
-  text-decoration: none; }
+  /* по умолчанию показываем нужный блок */ }
 
-.tabs li a:hover {
-  background: #ccc; }
+.tabs__caption {
+  display: block; }
 
-.tabs li.active-tab,
-.tabs li.active-tab a:hover {
-  font-weight: bold;
-  background: #fff; }
-
-.tab_container {
-  border: 1px solid #999;
-  border-top: none;
-  background: #fff; }
-
-.tab_content {
-  padding: 20px;
-  font-size: 16px; }
+.tabs__caption li {
+  display: inline-block;
+  cursor: pointer; }
 
 /* Slider */
 .slick-slider {
@@ -4248,7 +4229,20 @@ nav ul a:hover {
   padding-right: 35px; }
 
 .title--reviews {
-  position: relative; }
+  position: relative;
+  text-align: center; }
+
+.not-activ-title {
+  font-size: 12px; }
+
+.active-tab > .not-activ-title {
+  font-size: 25px; }
+
+.tabs__caption .title--reviews__arrow {
+  display: none; }
+
+.active-tab .title--reviews__arrow {
+  display: inline-block; }
 
 .reviews__avatar {
   position: absolute;
@@ -4289,13 +4283,11 @@ nav ul a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
   padding: 36px 7px 7px 7px;
   text-align: center;
   position: relative;
   margin-top: 35px; }
-
-.title--reviews__text {
-  font-size: 12px; }
 
 .reviews__name {
   font-weight: 700;
@@ -4330,6 +4322,14 @@ nav ul a:hover {
 
 .fa.reviews__feedback-vk {
   padding: 0; }
+
+.reviews-video__item {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.reviews-video__item iframe {
+  width: 100%; }
 
 .contacts__item {
   font-size: 14px;
@@ -4726,8 +4726,10 @@ div[data-slick-index="1"] {
   .qa__item {
     max-width: 290px; }
   /*14*/
-  .title--reviews__text {
+  .not-activ-title {
     font-size: 32px; }
+  .active-tab > .not-activ-title {
+    font-size: 60px; }
   .reviews .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;

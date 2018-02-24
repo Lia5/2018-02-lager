@@ -265,8 +265,11 @@ button.item-color--bg-3 {
 .title--reviews__arrow {
   background-color: $color3-1;
 }
-.title--reviews__text {
+.not-activ-title {
   color: $color3-2;
+}
+.active-tab>.not-activ-title {
+  color: $color3;
 }
 .reviews__item {
   background-color: $color3;

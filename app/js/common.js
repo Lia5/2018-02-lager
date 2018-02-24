@@ -190,7 +190,6 @@ $(function(){
       slidesPerRow: 1,
       arrows: false,
       responsive: [
-      
     {
       breakpoint: 980,
       settings: {
@@ -201,8 +200,6 @@ $(function(){
         slidesToScroll: 1,
         dots: true,
         dotsClass: "slider--my-dots",
-              
-        
       }
     }
     ]
@@ -235,7 +232,28 @@ $(function(){
     }
     ]
     });
-
+    $('.reviews-video__slider').slick({
+      slidesToShow: 2,
+      rows: 2,
+      slidesPerRow: 1,
+      arrows: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      dotsClass: "slider--my-dots",
+      responsive: [
+    {
+      breakpoint: 980,
+      settings: {
+        rows: 2,
+        slidesPerRow: 1,
+        infinite: true,
+       
+      }
+    }
+    ]
+    });
 
     // MAP
     
@@ -334,30 +352,63 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
 });
 /*tabs*/
 
-jQuery(document).ready(function($) {
-	//скрыть весь контент
-	$('.tab_content').hide();
-	//Показать контент первой вкладки
-	$('.tab_content:first').show();
-	//Активировать первую вкладку
-	$('.tabs li:first').addClass('active-tab');
+(function($) {
+  $(function() {
+   
+    $('ul.tabs__caption').on('click', 'li:not(.active-tab)', function() {
+      $(this)
+        .addClass('active-tab').siblings().removeClass('active-tab')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active-tab').eq($(this).index()).addClass('active-tab');
 
-	//Событие по клику
-	$('.tabs li').click(function(event) {
-		//Удалить "active" класс
-		$('.tabs li').removeClass('active-tab');
-		//Добавить "active" для выбранной вкладки
-		$(this).addClass('active-tab');
-		//Скрыть контент вкладки
-		$('.tab_content').hide();
+        $('.reviews__slider').slick('unslick'); 
+        $('.reviews-video__slider').slick('unslick'); 
+       
 
-		//Найти значение атрибута ссылки, чтобы 
-		//определить активный таб контент
-		var selectTab = $(this).find('a').attr("href");
-		//Исчезновение активного контента
-		$(selectTab).fadeIn();
-	});
-});
+        $('.reviews__slider').slick({
+          settings: "unslick",
+          slidesToShow: 3,
+          responsive: [
+        {
+          breakpoint: 980,
+          settings: {
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            dotsClass: "slider--my-dots",
+            arrows: false
+          }
+        }
+        ]
+        });
+        $('.reviews-video__slider').slick({
+          slidesToShow: 2,
+          rows: 2,
+          slidesPerRow: 1,
+          arrows: false,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          dotsClass: "slider--my-dots",
+          responsive: [
+        {
+          breakpoint: 980,
+          settings: {
+            rows: 2,
+            slidesPerRow: 1,
+            infinite: true,
+           
+          }
+        }
+        ]
+        }); 
+    ;
+
+    });
+   
+  });
+  })(jQuery);
 
 
 });   

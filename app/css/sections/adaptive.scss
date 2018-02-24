@@ -362,8 +362,11 @@ div[data-slick-index="1"] {
     max-width: 290px;
   }
 /*14*/
-.title--reviews__text {
-  font-size: 32px;;
+.not-activ-title {
+  font-size: 32px;
+}
+.active-tab>.not-activ-title {
+  font-size: 60px;
 }
   .reviews .slick-track {
     display: flex;
