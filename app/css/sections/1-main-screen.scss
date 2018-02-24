@@ -1,5 +1,5 @@
 .main-screen {
-  padding-top: 47px;
+  padding-top: 37px;
   background: url('../img/1-main-screen-bg.png'), $color1;
   background-position: center;
   background-size: cover;
@@ -7,8 +7,16 @@
   min-height: 400px;
   display: flex;
   flex-direction: column;
-
 }
+/*end fix-menu*/
+.fix-menu {
+  position: absolute;
+  left: -100%;
+   background-color: $color1;
+   z-index: 12;
+}
+
+/*end fix-menu*/
 .main-menu__item--desctop {
   padding: 9px;
 }

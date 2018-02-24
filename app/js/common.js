@@ -6,6 +6,38 @@ $(function(){
       $(".main-menu__item--desctop").toggleClass('hidden');
       $(".main-menu__item--mobile").toggleClass('hidden');
     });
+/*fix-menu*/
+$(document).ready(function() {
+    
+  var navPos, winPos, navHeight;
+    
+  function refreshVar() {
+    try {
+      navPos = $('.about').offset().top;
+    } catch (e){}
+    navHeight = $('.fix-menu').outerHeight(true);
+  }
+
+  refreshVar();
+  $(window).resize(refreshVar);
+
+    $('<div class="clone-fix-menu"></div>').insertBefore('.about').css('height', navHeight).hide();
+     
+  $(window).scroll(function() {
+    winPos = $(window).scrollTop();
+    
+    if (winPos >= navPos) {
+      $('.fix-menu').addClass('fixed shadow');  
+      $('.clone-fix-menu').show();
+    } else {
+      $('.fix-menu').removeClass('fixed shadow');
+      $('.clone-fix-menu').hide();
+    }
+  });
+  
+  });
+
+/*end fix-menu*/
 
     $('.about__slider').slick({
       settings: "unslick",
@@ -406,6 +438,8 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
    
   });
   })(jQuery);
+
+
 
 
 });   
