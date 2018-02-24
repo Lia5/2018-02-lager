@@ -9,31 +9,30 @@ $(function(){
 /*fix-menu*/
 $(document).ready(function() {
     
-  var navPos, winPos, navHeight;
+  var navPos, navPosEnd, winPos, navHeight;
     
   function refreshVar() {
     try {
       navPos = $('.about').offset().top;
+      navPosEnd = $('.qa').offset().top;
     } catch (e){}
     navHeight = $('.fix-menu').outerHeight(true);
   }
-
   refreshVar();
   $(window).resize(refreshVar);
 
-    $('<div class="clone-fix-menu"></div>').insertBefore('.about').css('height', navHeight).hide();
-     
-  $(window).scroll(function() {
-    winPos = $(window).scrollTop();
-    
-    if (winPos >= navPos) {
-      $('.fix-menu').addClass('fixed shadow');  
-      $('.clone-fix-menu').show();
-    } else {
-      $('.fix-menu').removeClass('fixed shadow');
-      $('.clone-fix-menu').hide();
-    }
-  });
+  $('<div class="clone-fix-menu"></div>').insertBefore('.about').css('height', navHeight).hide();
+    $(window).scroll(function() {
+      winPos = $(window).scrollTop();
+      
+      if ((winPos >= navPos)&&(winPos <= navPosEnd) ) {
+        $('.fix-menu').addClass('fixed shadow');  
+        $('.clone-fix-menu').show();
+      } else {
+        $('.fix-menu').removeClass('fixed shadow');
+        $('.clone-fix-menu').hide();
+      }
+    });
   
   });
 
@@ -242,7 +241,7 @@ $(document).ready(function() {
       $(this).addClass("hidden");
     });
     $(".qa__item__btn__roll").on('click', function() {
-      $('.qa__item__answer').addClass("hidden");
+      $(this).parent().addClass("hidden");
      // $('.qa__item__btn__answer').removeClass("hidden");
       $(this).parent().prev().removeClass("hidden");
     });
