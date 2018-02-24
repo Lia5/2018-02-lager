@@ -7,7 +7,6 @@ $(function(){
       $(".main-menu__item--mobile").toggleClass('hidden');
     });
 
-
     $('.about__slider').slick({
       settings: "unslick",
       slidesToShow: 3,
@@ -59,8 +58,6 @@ $(function(){
     }
     ]
     });
-
-
 
     $('.team__slider').slick({
       slidesToShow: 6,
@@ -225,7 +222,6 @@ $(function(){
       settings: "unslick",
       slidesToShow: 3,
       responsive: [
-      
     {
       breakpoint: 980,
       settings: {
@@ -235,7 +231,6 @@ $(function(){
         dots: true,
         dotsClass: "slider--my-dots",
         arrows: false
-
       }
     }
     ]
@@ -330,8 +325,6 @@ $('[data-popup-close]').on('click', function(e)  {
   e.preventDefault();
   
 });
-});   
-
 $(document).mouseup(function (e){ // событие клика по веб-документу
   var div = $(".typical__popup"); // тут указываем ID элемента
   if (!div.is(e.target) // если клик был не по нашему блоку
@@ -339,6 +332,37 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
     div.parent().hide(); // скрываем его
   }
 });
+/*tabs*/
+
+jQuery(document).ready(function($) {
+	//скрыть весь контент
+	$('.tab_content').hide();
+	//Показать контент первой вкладки
+	$('.tab_content:first').show();
+	//Активировать первую вкладку
+	$('.tabs li:first').addClass('active-tab');
+
+	//Событие по клику
+	$('.tabs li').click(function(event) {
+		//Удалить "active" класс
+		$('.tabs li').removeClass('active-tab');
+		//Добавить "active" для выбранной вкладки
+		$(this).addClass('active-tab');
+		//Скрыть контент вкладки
+		$('.tab_content').hide();
+
+		//Найти значение атрибута ссылки, чтобы 
+		//определить активный таб контент
+		var selectTab = $(this).find('a').attr("href");
+		//Исчезновение активного контента
+		$(selectTab).fadeIn();
+	});
+});
+
+
+});   
+
+
 /*
      
  $(window).resize(function(){
