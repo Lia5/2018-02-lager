@@ -233,13 +233,12 @@ $(function(){
     ]
     });
     $('.reviews-video__slider').slick({
-      slidesToShow: 2,
       rows: 2,
-      slidesPerRow: 1,
-      arrows: false,
-      infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
+      slidesPerRow: 2,
+      arrows: false,
+      infinite: true,
       dots: true,
       dotsClass: "slider--my-dots",
       responsive: [
@@ -248,13 +247,12 @@ $(function(){
       settings: {
         rows: 2,
         slidesPerRow: 1,
-        infinite: true,
-       
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     }
     ]
-    });
-
+    }); 
     // MAP
     
  ymaps.ready(init);
@@ -382,13 +380,12 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
         ]
         });
         $('.reviews-video__slider').slick({
-          slidesToShow: 2,
           rows: 2,
-          slidesPerRow: 1,
-          arrows: false,
-          infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+          slidesPerRow: 2,
+          arrows: false,
+          infinite: true,
           dots: true,
           dotsClass: "slider--my-dots",
           responsive: [
@@ -397,13 +394,13 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
           settings: {
             rows: 2,
             slidesPerRow: 1,
-            infinite: true,
-           
+            slidesToShow: 1,
+            slidesToScroll: 1
           }
         }
         ]
         }); 
-    ;
+    
 
     });
    

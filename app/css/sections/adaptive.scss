@@ -164,6 +164,9 @@
   .fix-top__title {
     display: block;
   }
+  .fix-top .menu-toggle {
+    display: none;
+  }
 /*1*/
 
   .main__item__name {
@@ -390,7 +393,9 @@ div[data-slick-index="1"] {
   .popup__question__txt {
     font-size: 20px;
   }
-
+  .reviews-video__slider .slick-track {
+    display: block;
+  }
 
 
 
