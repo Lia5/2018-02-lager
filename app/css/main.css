@@ -4694,6 +4694,7 @@ nav ul a:hover {
   .tour__slider__item {
     padding-left: 285px;
     padding-right: 285px; }
+  /*
   div[data-slick-index="-1"] {
     background-color: red;
     position: relative;
@@ -4702,15 +4703,18 @@ nav ul a:hover {
     opacity: 0.5;
     margin-top: 83px;
     margin-right: 2%;
-    zoom: 83%; }
-  div[data-slick-index="1"] {
-    background-color: yellow;
-    position: relative;
-    left: -7%;
-    z-index: -1;
-    opacity: 0.5;
-    margin-top: 83px;
-    zoom: 83%; }
+    zoom: 83%;
+}
+div[data-slick-index="1"] {
+  background-color: yellow;
+  position: relative;
+  left: -7%;
+  z-index: -1;
+  opacity: 0.5;
+  margin-top: 83px;
+  zoom: 83%;
+}
+*/
   /*11*/
   .subtitle--sales {
     font-size: 20px; }
