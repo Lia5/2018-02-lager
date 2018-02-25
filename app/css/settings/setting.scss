@@ -89,7 +89,12 @@ button {
     max-width: 1170px;
     margin: 0 auto;
 }
-
+/*for nav*/
+.pattern {
+	padding-top: 38px;
+	margin-top: 0;
+}
+/*end for nav*/
 
 .btn-typical {
 	padding: 10px;
@@ -107,7 +112,9 @@ button.btn-typical {
 	text-transform: uppercase;
 }
 .section {
-  padding-top: 40px;
+	padding-top: 78px;
+	margin-top: -38px;
+  //padding-top: 40px;
   padding-bottom: 40px;
 }
 .section__item {

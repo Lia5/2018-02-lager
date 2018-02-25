@@ -311,7 +311,7 @@
     padding-left: 285px;
     padding-right: 285px;
   }
-  /*
+  
   div[data-slick-index="-1"] {
     background-color: red;
     position: relative;
@@ -331,7 +331,7 @@ div[data-slick-index="1"] {
   margin-top: 83px;
   zoom: 83%;
 }
-*/
+
 /*11*/
   .subtitle--sales {
     font-size: 20px;
@@ -480,6 +480,7 @@ div[data-slick-index="1"] {
 /*2*/
 .about {
   padding-top: 115px;
+  margin-top: -115px;
 }
 /*5*/
   .has-question__form {
