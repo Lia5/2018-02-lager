@@ -4152,6 +4152,37 @@ nav ul a:hover {
   height: 37px;
   width: 37px; }
 
+/*
+div[tabindex="-1"]+div[tabindex="-1"] {
+  background-color: red;
+  position: relative;
+  right: -9%;
+  z-index: -1;
+  opacity: 0.5;
+  margin-top: 83px;
+  margin-right: 2%;
+  zoom: 83%;
+}
+
+div[tabindex="0"]+div[tabindex="-1"] {
+  background-color: yellow;
+  position: relative;
+  left: -7%;
+  z-index: -1;
+  opacity: 0.5;
+  margin-top: 83px;
+  zoom: 83%;
+}
+div[tabindex="0"],
+.slick-slide.slick-cloned {
+  background-color: green;
+  position: relative;
+  left: auto;
+  z-index: 1;
+  opacity: 1;
+  margin-top: auto;
+  zoom: 100%;
+}*/
 .sales {
   padding-left: 24px;
   padding-right: 24px; }

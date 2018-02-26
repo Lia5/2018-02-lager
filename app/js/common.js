@@ -179,6 +179,8 @@ $(document).ready(function() {
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
+      centerMode: true,
+      centerPadding: '100px',
       infinite: true/*,,
       centerMode: true,
       centerPadding: '150px' 
