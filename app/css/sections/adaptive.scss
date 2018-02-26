@@ -207,14 +207,14 @@
   /*3*/
   .how__item {
     display: flex;
-    padding: 13px;
+    padding: 25px 14px 14px 14px;
   }
   .how__pic {
-    width: 50%;
-    margin-right: 5%;
+    width: 515px;
+    margin-right: 84px;
   }
   .how__pic+div{
-    width: 45%;
+    width: 515px;
   }
   .how__slider {
     font-size: 18px;
@@ -399,10 +399,16 @@ div[data-slick-index="1"] {
 
 }
 @media screen and (min-width: 1170px) {
-
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .wrap {
     width: 1170px;
     margin: 0 auto;
+  }
+  .wrap-mobile {
+    display: flex;
   }
   .fix-top {
     padding-left: 0;
@@ -489,17 +495,62 @@ div[data-slick-index="1"] {
     margin-right: -6px;
     line-height: 1;
   }
-  .btn--main {
-    bottom: -122px;
-  }
+
 /*2*/
-.about {
- // padding-top: 115px;
- // margin-top: -115px;
-  padding-top: 40px;
-  margin-top: 0;
-}
+  .about {
+  // padding-top: 115px;
+  // margin-top: -115px;
+    margin-top: 0;
+  }
+  .title--about {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .about__desctop p {
+    max-width: 468px;
+  }
+  .btn--main {
+    font-size: 24px;
+    bottom: -131px;
+    left: 116px;
+    min-width: 233px;
+    margin-bottom: 0;
+  }
+  /*3*/
+  .section__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .title--how--desctop {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .how__slider {
+    padding: 0;
+  }
+  /*4*/
+  .mk {
+    padding-bottom: 48px;
+  }
+  .title--mk {
+    padding-bottom: 13px;
+  }
+  .mk .mk__slider__item {
+    min-height: 267px;
+    min-width: 528px;
+  }
+  .mk .mk__slider__item:nth-child(1),
+  .mk .mk__slider__item:nth-child(4), {
+    margin-right: 84px;
+  }
+  .mk__slider__icon {
+    width: 60px;
+  }
+
 /*5*/
+  .has-question {
+    padding-top: 33px;
+  }
   .has-question__form {
     width: 100%;
     display: flex;
@@ -516,14 +567,35 @@ div[data-slick-index="1"] {
   .has-question__form button {
     width: 33%;
   }
+  .btn--has-question {
+    min-width: 400px;
+    font-size: 20px;
+    padding: 13px;
+  }
+  .form-typical .btn--has-question {
+    margin-bottom: 0;
+  }
   /*6*/
+  .statistic {
+    padding-top: 90px;
+  }
   .statistic__numeric {
     font-size: 60px;
   }
   .statistic__description {
     font-size: 30px;
   }
+  .statistic__description {
+    padding-bottom: 44px;
+  }
+  .statistic-items li {
+    width: 321px;
+  }
   /*7*/
+  .team__title {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
   .section .slick-prev:before,
   .section .slick-next:before {
     font-size: 60px;

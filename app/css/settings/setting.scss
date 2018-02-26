@@ -6,7 +6,7 @@ body {
 	padding: 0;
 	color: $color4;
 	font-size: 15px;
-	line-height: 1.2;
+	line-height: 1.4;
 	background: $color3;
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -91,9 +91,12 @@ button {
 		margin: 0 auto;
 		padding: 0 15px;
 }
+.wrap-mobile {
+	display: block;
+}
 /*for nav*/
 .pattern {
-	padding-top: 38px;
+//	padding-top: 38px;
 	margin-top: 0;
 }
 /*end for nav*/
@@ -115,7 +118,7 @@ button.btn-typical {
 }
 .section {
 	padding-top: 78px;
-	margin-top: -38px;
+//	margin-top: -38px;
   //padding-top: 40px;
   padding-bottom: 40px;
 }

@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="css/main.css">
 <!--  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:700|Open+Sans&amp;subset=cyrillic" rel="stylesheet">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrCJjsEd1-NqzpD_-ode97UjJkJA6a_rI"></script>
+ <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:700|Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrCJjsEd1-NqzpD_-ode97UjJkJA6a_rI"></script>-->
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
 </head>
 <body>
@@ -66,14 +66,14 @@
         background-size: cover;}
       </style>
       <nav>
-        <div class="wrap">
+        <div class="wrap wrap-mobile">
           <div class="main-menu__item main-menu__item--desctop"><a href="#">
             <div class="logo"><img src="img/logo.png" alt="Логотип Академии Героев"></div>
             <div class="main__title"> 
               <div>Академия</div>  Героев
             </div><!-- /.main__title --></a>
           </div>
-          <ul role="navigation" class="main-menu__items hidden"><li class="main-menu__item"><a href="#about">О лагере</a></li>
+          <ul class="main-menu__items hidden"><li class="main-menu__item"><a href="#about">О лагере</a></li>
             <li class="main-menu__item"><a href="#routine">Программа</a></li>
             <li class="main-menu__item"><a href="#team">Команда</a></li>
             <li class="main-menu__item"><a href="#manuals">Родителям</a></li>
@@ -107,7 +107,7 @@
         <!-- /.btn-form -->
         
       </div><!-- /.wrap -->
-      <a  class="btn-typical btn--upper item-color--bg-3 item-color--txt-1 btn--main item-color--brd-3" data-popup-open="popup-soc-qa" href="#">Связаться</a>
+      <a  class="btn-typical btn--upper item-color--bg-3 item-color--txt-1 btn--main item-color--brd-3 shadow4" data-popup-open="popup-soc-qa" href="#">Связаться</a>
       
       
     </div>
@@ -120,7 +120,7 @@
             <div>Академия</div>  Героев
           </div><!-- /.main__title --></a>
         </div>
-        <ul role="navigation" class="main-menu__items"><li class="main-menu__item"><a href="#about">О лагере</a></li>
+        <ul class="main-menu__items"><li class="main-menu__item"><a href="#about">О лагере</a></li>
           <li class="main-menu__item"><a href="#routine">Программа</a></li>
           <li class="main-menu__item"><a href="#team">Команда</a></li>
           <li class="main-menu__item"><a href="#manuals">Родителям</a></li>
@@ -152,12 +152,12 @@
       <div class="pattern-overlay">
         <section class="section">
           <div class="wrap1170 ">
-            <div class="section__item how__item">
+            <div class="section__item how__item shadow4">
               <div class="how__pic">
-                <h2 class="title-typical item-color--txt-1 title--how--mobile">Как проходит</h2>
+                <h2 class="title-typical item-color--txt-1 title--how--mobile">Как проходит?</h2>
                 <img src="img/3-how.png" alt=""></div>
                 <div>
-                  <h2 class="title-typical title--how item-color--txt-2 title--how--desctop">Как проходит</h2>
+                  <h2 class="title-typical title--how item-color--txt-2 title--how--desctop">Как проходит?</h2>
                   <div class="how__slider slider-dots--color-1">
                     <div>
                       <p>Мы работаем в формате FLS - Free Line Story, смены со свободной сюжетной линией.В наших лагерях события разворачиваются не по ранее спланированному сценарию, а целиком зависят от принятых участниками решений.</p>
@@ -218,8 +218,8 @@
         <form>
           <div class="form-typical has-question__form ">
             <input class="item-color--brd-2" type="text" name="Имя" placeholder="Введите имя" required><br>
-            <input  class="item-color--brd-2 phone-mask" type="phone" name="Телефон" placeholder="Номер телефона" required><br>
-            <button class="btn-typical btn--upper item-color--brd-2 item-color--bg-2 item-color--txt-3 btn--has-question"  data-popup-open="popup-question">Заказать звонок</button>
+            <input  class="item-color--brd-2 phone-mask" type="text" name="Телефон" placeholder="Номер телефона" required><br>
+            <button class="btn-typical btn--upper item-color--brd-2 item-color--bg-2 item-color--txt-3 btn--has-question shadow2"  data-popup-open="popup-question">Заказать звонок</button>
           </div>
         </form><!--/form-->
       </div><!--/wrap1170-->
@@ -229,11 +229,11 @@
         <ul class="statistic-items item-color--txt-3">
           <li>
             <span class="statistic__numeric">90%</span>
-            <div class="statistic__description">детей приезжают к нам снова</div>
+            <div class="statistic__description">детей приезжают к&nbsp;нам снова</div>
           </li>
           <li>
             <span class="statistic__numeric">>15</span>
-            <div class="statistic__description">смен проведено за 2 года</div>
+            <div class="statistic__description">смен проведено за&nbsp;2&nbsp;года</div>
           </li>
           <li>
             <span class="statistic__numeric">>200</span>
@@ -256,7 +256,7 @@
           <section class="section">
             <div class="team">
               <div class="wrap1170 ">
-                <h2 class="title-typical item-color--txt-1">Команда</h2>
+                <h2 class="title-typical item-color--txt-1 team__title">Команда</h2>
 
                 <div class="team__slider-for team__slider-for-visible hidden">
                   <div class="team__item team__item--full">
@@ -1118,7 +1118,11 @@
 
                   
                   <div class="team__item">
-                    <div class="team__memder__foto"><img src="img/team/6-team-1.png" alt="Команда">
+                    <div class="team__memder__foto">
+                      <div class="team-absolute team-absolute-color1">
+                        узнать больше
+                      </div>
+                      <img src="img/team/6-team-1.png" alt="Команда">
                     </div>
                     <div class="team__item__description">
                       <div class="team__memder__name subtitle-typical item-color--txt-1">Дмитрий Львов</div>
@@ -1126,7 +1130,11 @@
                     </div>
                   </div><!--team__item-->
                   <div class="team__item">
-                    <div class="team__memder__foto"><img src="img/team/6-team-2.png" alt="Команда">
+                    <div class="team__memder__foto">
+                      <div class="team-absolute team-absolute-color1">
+                        узнать больше
+                      </div>
+                      <img src="img/team/6-team-2.png" alt="Команда">
                     </div>
                     <div class="team__item__description">
                       <div class="team__memder__name subtitle-typical item-color--txt-1">Андрей Пустобаев</div>
@@ -1135,7 +1143,11 @@
                   </div><!--team__item-->
 
                   <div class="team__item">
-                    <div class="team__memder__foto"><img src="img/team/6-team-3.png" alt="Команда">
+                    <div class="team__memder__foto">
+                      <div class="team-absolute team-absolute-color1">
+                        узнать больше
+                      </div>
+                      <img src="img/team/6-team-3.png" alt="Команда">
                     </div>
                     <div class="team__item__description">
                       <div class="team__memder__name subtitle-typical item-color--txt-1">Антон Гоголин</div>
@@ -1143,7 +1155,11 @@
                     </div>
                   </div><!--team__item-->
                   <div class="team__item">
-                    <div class="team__memder__foto"><img src="img/team/6-team-4.png" alt="Команда">
+                    <div class="team__memder__foto">
+                      <div class="team-absolute team-absolute-color2">
+                        узнать больше
+                      </div>
+                      <img src="img/team/6-team-4.png" alt="Команда">
                     </div>
                     <div class="team__item__description">
                       <div class="team__memder__name subtitle-typical item-color--txt-2">Кристина Сирожева</div>
@@ -1151,7 +1167,11 @@
                     </div>
                   </div><!--team__item-->
                   <div class="team__item">
-                    <div class="team__memder__foto"><img src="img/team/6-team-5.png" alt="Команда">
+                    <div class="team__memder__foto">
+                      <div class="team-absolute team-absolute-color2">
+                        узнать больше
+                      </div>
+                      <img src="img/team/6-team-5.png" alt="Команда">
                     </div>
                     <div class="team__item__description">
                       <div class="team__memder__name subtitle-typical item-color--txt-2">Юлия Ким</div>
@@ -1159,7 +1179,11 @@
                     </div>
                   </div><!--team__item-->
                   <div class="team__item">
-                    <div class="team__memder__foto"><img src="img/team/6-team-6.png" alt="Команда">
+                    <div class="team__memder__foto">
+                      <div class="team-absolute team-absolute-color2">
+                        узнать больше
+                      </div>
+                      <img src="img/team/6-team-6.png" alt="Команда">
                     </div>
                     <div class="team__item__description">
                       <div class="team__memder__name subtitle-typical item-color--txt-2">Василианна Костина</div>
@@ -1404,7 +1428,7 @@
             <form>
               <div class="form-typical manuals__form ">
                 <input class="item-color--brd-1" type="text" name="Имя" placeholder="Введите имя" required><br>
-                <input  class="item-color--brd-1" class="phone-mask" type="phone" name="Телефон" placeholder="Номер телефона" required><br>
+                <input  class="item-color--brd-1" class="phone-mask" type="text" name="Телефон" placeholder="Номер телефона" required><br>
                 <input  class="item-color--brd-1" type="email" name="E-mail" placeholder="Почта" required><br>
                 <button class="btn-typical btn--upper item-color--brd-1 item-color--bg-1 item-color--txt-3 btn--has-question" data-popup-open="popup-manuals">Получить методичку</button>
               </div>
@@ -1524,7 +1548,7 @@
           <form>
             <div class="form-typical has-question__form ">
               <input class="item-color--brd-2" type="text" name="Имя" placeholder="Введите имя" required><br>
-              <input  class="item-color--brd-2 phone-mask" type="phone" name="Телефон" placeholder="Номер телефона" required><br>
+              <input  class="item-color--brd-2 phone-mask" type="text" name="Телефон" placeholder="Номер телефона" required><br>
               <button class="btn-typical btn--upper item-color--brd-2 item-color--bg-2 item-color--txt-3 btn--has-question" data-popup-open="popup-question">Заказать звонок</button>
             </div>
           </form><!--/form-->
@@ -1577,35 +1601,31 @@
               <div class="tabs__content">
                 <div class="reviews-video__slider slider-dots--color-3">
                   <div class="reviews-video__item">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2y2MoJN1Yc?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NHAHHidWUcg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div><!--reviews-video__item-->
                   <div class="reviews-video__item">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2y2MoJN1Yc?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NHAHHidWUcg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div><!--reviews-video__item-->
                   <div class="reviews-video__item">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2y2MoJN1Yc?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NHAHHidWUcg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div><!--reviews-video__item-->
                   <div class="reviews-video__item">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2y2MoJN1Yc?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NHAHHidWUcg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div><!--reviews-video__item-->
                   <div class="reviews-video__item">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2y2MoJN1Yc?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NHAHHidWUcg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div><!--reviews-video__item-->
                   <div class="reviews-video__item">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2y2MoJN1Yc?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NHAHHidWUcg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div><!--reviews-video__item-->
                   <div class="reviews-video__item">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2y2MoJN1Yc?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NHAHHidWUcg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div><!--reviews-video__item-->
                   <div class="reviews-video__item">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2y2MoJN1Yc?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NHAHHidWUcg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div><!--reviews-video__item-->
                   
                 </div><!--reviews-video__slider-->
-                
-                  
-                
-
                 
               </div>
             </div>

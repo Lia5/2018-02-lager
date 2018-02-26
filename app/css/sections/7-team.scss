@@ -84,4 +84,24 @@
   margin: 10px auto;
   text-align: center;
 }
-
+/*hover*/
+.team__memder__foto {
+  position: relative;
+  cursor: pointer;
+}
+.team__memder__foto:hover .team-absolute {
+  bottom: 0;
+}
+.team-absolute {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all ease-out 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 60%;
+  text-transform: uppercase;
+  font-size: 19px;
+  bottom: 100%;
+  color: $color3;
+}

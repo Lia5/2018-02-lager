@@ -40,17 +40,19 @@ $(document).ready(function() {
 
     $('.about__slider').slick({
       settings: "unslick",
-      slidesToShow: 3,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: false,
+      dots: false,
       responsive: [
     {
       breakpoint: 980,
       settings: {
-        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
         dotsClass: "slider--my-dots",
-        arrows: false
       }
     }
     ]
@@ -179,21 +181,16 @@ $(document).ready(function() {
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
-      centerMode: true,
-      centerPadding: '100px',
-      infinite: true/*,,
-      centerMode: true,
-      centerPadding: '150px' 
+      infinite: true,
       responsive: [
     {
       breakpoint: 980,
       settings: {
         centerMode: true,
-        centerPadding: '10px',
-
+        centerPadding: '10px'
       }
     }
-    ]*/
+    ]
     });
     $(".phone-mask").mask("+7(999) 999-9999");
     /*
