@@ -1,6 +1,5 @@
 .main-screen {
   padding-top: 37px;
-  background: url('../img/1-main-screen-bg.png'), $color1;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -17,9 +16,7 @@
 }
 
 /*end fix-menu*/
-.main-menu__item--desctop {
-  padding: 9px;
-}
+
 .main-menu__item--desctop a {
   display: flex;
 }

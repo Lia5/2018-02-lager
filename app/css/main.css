@@ -752,11 +752,13 @@ button {
   flex-wrap: wrap;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding: 0 15px; }
 
 .wrap1170 {
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 15px; }
 
 /*for nav*/
 .pattern {
@@ -3498,7 +3500,7 @@ button.btn-typical {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 8px 16px;
+  padding: 9px 16px;
   padding-right: 60px;
   z-index: 12; }
 
@@ -3631,7 +3633,6 @@ nav ul a:hover {
 
 .main-screen {
   padding-top: 37px;
-  background: url("../img/1-main-screen-bg.png"), #4196cb;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -3652,9 +3653,6 @@ nav ul a:hover {
   z-index: 12; }
 
 /*end fix-menu*/
-.main-menu__item--desctop {
-  padding: 9px; }
-
 .main-menu__item--desctop a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4797,7 +4795,7 @@ div[data-slick-index="1"] {
   .reviews-video__slider .slick-track {
     display: block; } }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .wrap {
     width: 1170px;
     margin: 0 auto; }
@@ -4829,6 +4827,13 @@ div[data-slick-index="1"] {
     -moz-box-shadow: 0px 7px 17px -2px #757575;
     box-shadow: 0px 7px 17px -2px #757575; }
   /*end fix-menu*/
+  .main-screen > nav {
+    margin-top: 22px; }
+  nav .logo {
+    width: 69px;
+    height: 69px; }
+  nav .main__title {
+    padding: 12px 9px; }
   .main-menu__item--desctop {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4856,25 +4861,26 @@ div[data-slick-index="1"] {
     content: none; }
   .main__item__name {
     width: 753px;
-    padding: 15px 36px 15px 50px;
-    bottom: 153px;
-    margin-left: -36px; }
+    padding: 17px 32px 24px 48px;
+    bottom: 153px; }
   .main__season {
-    font-size: 87px; }
+    font-size: 87px;
+    line-height: 1; }
   .main__season__name {
     font-size: 49px; }
   .main__item__date {
     width: 585px;
-    bottom: 24px;
-    padding: 13px 27px;
-    font-size: 73px;
-    margin-right: -6px; }
+    bottom: 25px;
+    padding: 14px 27px;
+    font-size: 72px;
+    margin-right: -6px;
+    line-height: 1; }
   .btn--main {
     bottom: -122px; }
   /*2*/
   .about {
-    padding-top: 115px;
-    margin-top: -115px; }
+    padding-top: 40px;
+    margin-top: 0; }
   /*5*/
   .has-question__form {
     width: 100%;
@@ -4925,6 +4931,8 @@ div[data-slick-index="1"] {
     font-size: 18px; } }
 
 @media screen and (min-width: 1300px) {
+  .main__item__name {
+    margin-left: -34px; }
   .main__item__date {
     margin-right: -42px; }
   .section .slick-next {
