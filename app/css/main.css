@@ -3633,8 +3633,6 @@ nav ul a:hover {
 
 .main-screen {
   padding-top: 37px;
-  background-position: center;
-  background-size: cover;
   height: 100vh;
   min-height: 400px;
   display: -webkit-box;
