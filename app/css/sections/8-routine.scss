@@ -39,7 +39,7 @@
 .popup-routine__arrows-left {
   left: -55px;
 }
-.popup-routine__arrows-left .fa-angle-left:nth-child(2){
+.popup-routine__arrows-right .fa-angle-left:nth-child(1){
   font-size: 44px;
   position: absolute;
   right: 4px;
@@ -48,7 +48,7 @@
 .popup-routine__arrows-right {
   right: -55px; 
 }
-.popup-routine__arrows-right .fa-angle-right:nth-child(1){
+.popup-routine__arrows-left .fa-angle-right:nth-child(2){
   font-size: 44px;
   position: absolute;
   left: 4px;

@@ -594,7 +594,6 @@ div[data-slick-index="1"] {
   /*7*/
   .team__title {
     padding-top: 0;
-    padding-bottom: 60px;
   }
   .section .slick-prev:before,
   .section .slick-next:before {
@@ -606,9 +605,89 @@ div[data-slick-index="1"] {
   .section .slick-prev {
     left: -64px;
   }
+  .team__slider {
+    margin-top: 60px;
+  }
+  .team__slider-for {
+    margin-top: 40px;
+  }
+  /*8*/
+  .routine {
+    padding-bottom: 40px;
+  }
+  .routine__title {
+    padding: 0 0 20px 0;
+    line-height: 1;
+  }
+  .btn-routine {
+    font-size: 25px;
+    width: 641px;
+    max-width: none;
+    margin-bottom: 0;
+  }
+  /*9*/
+  .conditions .section {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .conditions__slider {
+    width: 974px;
+    background-color: $color3;
+  }
+  .conditions__item__description {
+    padding-top: 110px;
+    padding-right: 52px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+  .conditions__list__img {
+    margin: 0 29px 0 0;
+  }
+  .conditions__buttons {
+    margin-bottom: 0;
+  }
+  /*9*/
+  .btn--condition {
+    min-width: 230px;
+  }
+
   /*13*/
   .qa__item {
     max-width: 350px;
+  }
+  /*10*/
+  .title--tour {
+    line-height: 1;
+    padding: 0;
+  }
+  .tour {
+    padding-bottom: 70px;
+  }
+  .subtitle--tour {
+    padding-top: 32px;
+    padding-block-end: 23px;
+  }
+  /*11*/
+  .sales {
+    padding-top: 40px;
+  }
+  .sales__title{
+    padding: 0 0 28px 0;
+    line-height: 1;
+  }
+  /*12*/
+  .manuals {
+    padding-top: 55px;
+  }
+  .manuals__wrap {
+    padding-bottom: 42px;
+  }
+  /*13*/
+  .title__qa {
+    padding-bottom: 84px;
+  }
+  .qa .section {
+    padding-bottom: 80px;
   }
   /*14*/
   .reviews__name {
@@ -619,6 +698,20 @@ div[data-slick-index="1"] {
   }
   .reviews__slider__decription {
     font-size: 15px;
+  }
+  .question {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+  /*15*/
+  .contacts__item {
+    font-size: 20px;
+  }
+  .contacts__title {
+    padding-bottom: 45px;
+  }
+  .contacts__item {
+    padding-bottom: 50px;
   }
   /*popup*/
   .popup-scroll{

@@ -96,7 +96,7 @@ $(document).ready(function() {
       slidesToShow: 6,
       slidesToScroll: 1,
       asNavFor: '.team__slider-for',
-      dots: true,
+      dots: false,
       dotsClass: "slider--my-dots",
       arrows: true,
       focusOnSelect: true,
@@ -104,6 +104,7 @@ $(document).ready(function() {
     {
       breakpoint: 1200,
       settings: {
+        dots: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.team__slider-for',
@@ -165,7 +166,7 @@ $(document).ready(function() {
     {
       breakpoint: 980,
       settings: {
-        
+        adaptiveHeight: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
