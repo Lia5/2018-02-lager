@@ -1221,6 +1221,12 @@ input, textarea {
   font-style: bold; }
 
 @font-face {
+  font-family: 'Constantia-Bold-Italic';
+  src: url("../fonts/Constantia-Bold-Italic.woff2") format("woff2"), url("../fonts/Constantia-Bold-Italic.eot") format("eot"), url("../fonts/Constantia-Bold-Italic.svg") format("svg"), url("../fonts/Constantia-Bold-Italic.ttf") format("truetype"), url("../fonts/Constantia-Bold-Italic.woff") format("woff");
+  font-weight: 700;
+  font-style: bold; }
+
+@font-face {
   font-family: 'Montserrat Alternates';
   src: url("../fonts/MontserratAlternates-Bold.woff2") format("woff2"), url("../fonts/MontserratAlternates-Bold.eot") format("eot"), url("../fonts/MontserratAlternates-Bold.otf") format("otf"), url("../fonts/MontserratAlternates-Bold.svg") format("svg"), url("../fonts/MontserratAlternates-Bold.ttf") format("truetype"), url("../fonts/MontserratAlternates-Bold.woff") format("woff");
   font-weight: 500;
@@ -5093,9 +5099,27 @@ div[data-slick-index="1"] {
     margin: 0 29px 0 0; }
   .conditions__buttons {
     margin-bottom: 0; }
+  .conditions__title {
+    padding-bottom: 40px; }
+  .conditions__list p {
+    padding-bottom: 21px; }
   /*9*/
   .btn--condition {
     min-width: 230px; }
+  .conditions__item__description2 {
+    padding-top: 30px; }
+  .conditions__title {
+    font-style: italic;
+    font-size: 30px;
+    text-align: left; }
+  /*11*/
+  .subtitle--sales {
+    font-family: 'Constantia-Bold-Italic', 'Arial Narrow', Arial, sans-serif; }
+  .sales__slider__item {
+    margin-right: 20px;
+    margin-left: 0; }
+  .sales__slider__item:last-child() {
+    margin-right: 0; }
   /*13*/
   .qa__item {
     max-width: 350px; }
@@ -5170,7 +5194,7 @@ div[data-slick-index="1"] {
   .section .slick-next {
     right: -25px; }
   .popup-scroll {
-    max-height: 100%; } }
+    max-height: 725px; } }
 
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;*/

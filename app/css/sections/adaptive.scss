@@ -666,11 +666,36 @@ div[data-slick-index="1"] {
   .conditions__buttons {
     margin-bottom: 0;
   }
+  .conditions__title {
+    padding-bottom: 40px;
+  }
+  .conditions__list p {
+    padding-bottom: 21px;
+}
   /*9*/
   .btn--condition {
     min-width: 230px;
   }
-
+  .conditions__item__description2 {
+    padding-top: 30px;
+  }
+  .conditions__title {
+    font-style: italic;
+    font-size: 30px;
+    text-align: left;
+  }
+/*11*/
+.subtitle--sales {
+  font-family: 'Constantia-Bold-Italic', 'Arial Narrow', Arial, sans-serif
+}
+.sales__slider__item {
+  margin-right: 20px;
+  margin-left: 0;
+}
+.sales__slider__item:last-child() {
+  margin-right: 0;
+  
+}
   /*13*/
   .qa__item {
     max-width: 350px;
@@ -772,7 +797,7 @@ div[data-slick-index="1"] {
     right: -25px;
   }
   .popup-scroll{
-    max-height: 100%;
+    max-height: 725px;
   }
 }
 
