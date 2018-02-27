@@ -966,6 +966,10 @@ button.btn-typical {
 input, textarea {
   outline: none; }
 
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0; }
+
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
@@ -3906,13 +3910,17 @@ nav ul a {
   width: 100%; }
 
 .team__item__description {
-  padding: 12px; }
+  padding: 12px;
+  text-align: center; }
 
 .team__memder__name {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1; }
 
 .team__memder__position {
-  font-size: 11px; }
+  padding-top: 7px;
+  font-size: 11px;
+  line-height: 1; }
 
 .team .slick-prev:before,
 .team .slick-next:before {
@@ -3958,7 +3966,8 @@ nav ul a {
   order: -1;
   width: 67%;
   position: relative;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  text-align: left; }
 
 .team__item__description--full-mob {
   position: absolute;
@@ -5047,6 +5056,16 @@ div[data-slick-index="1"] {
     margin-top: 60px; }
   .team__slider-for {
     margin-top: 40px; }
+  .team__slider {
+    padding: 0; }
+  .team__item__description {
+    padding: 15px; }
+  .team__memder__name {
+    font-size: 25px; }
+  .team__memder__position {
+    padding-top: 15px;
+    font-size: 17px;
+    line-height: 1.1; }
   /*8*/
   .routine {
     padding-bottom: 40px; }

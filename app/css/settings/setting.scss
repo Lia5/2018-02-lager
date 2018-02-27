@@ -257,6 +257,10 @@ button.btn-typical {
 input, textarea {
 	outline:none;
 }
+:active, :hover, :focus {
+	outline: 0;
+	outline-offset: 0;
+}
 ::-webkit-input-placeholder {
 	color: $color4-4;
 	font-size: 20px;
