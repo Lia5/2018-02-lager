@@ -126,9 +126,7 @@
   .tour__slider__item {
     padding-left: 4px;
     padding-right: 4px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
+  }
   .tour__item__decription {
     padding: 30px;
   }
@@ -689,6 +687,11 @@ div[data-slick-index="1"] {
     font-style: italic;
     font-size: 30px;
     text-align: left;
+  }
+  /*10*/
+  .tour__slider__item {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 /*11*/
 .subtitle--sales {
