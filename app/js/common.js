@@ -183,6 +183,8 @@ $(document).ready(function() {
       slidesToScroll: 1,
       dots: false,
       infinite: true,
+      centerMode: true,
+      centerPadding: '150px',
       responsive: [
     {
       breakpoint: 980,
