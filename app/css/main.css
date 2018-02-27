@@ -3811,12 +3811,6 @@ nav ul a {
   opacity: .75;
   color: black; }
 
-.pattern {
-  background: url("../img/3-pattern.png");
-  background-position: 0 0;
-  background-repeat: repeat;
-  background-size: 21%; }
-
 .how__pic {
   width: 100%; }
 
@@ -3829,11 +3823,6 @@ nav ul a {
 
 .title--how--desctop {
   display: none; }
-
-.mk {
-  background: url("../img/4-mk.png"), #4196cb;
-  background-position: center;
-  background-size: cover; }
 
 .mk__slider__item {
   padding: 13px;
@@ -3864,11 +3853,6 @@ nav ul a {
 .has-question__form {
   width: 70%;
   text-align: center; }
-
-.statistic {
-  background: url("../img/6-statistic-bg.png");
-  background-position-x: 72%;
-  background-size: cover; }
 
 .statistic-items {
   padding-left: 50%; }
@@ -4116,8 +4100,6 @@ nav ul a {
   margin: 7px; }
 
 .tour {
-  background: url("../img/10-tour-bg.png");
-  background-size: cover;
   padding-left: 33px;
   padding-right: 33px; }
 
@@ -4260,10 +4242,7 @@ div[tabindex="0"],
 
 .manuals {
   padding-left: 24px;
-  padding-right: 24px;
-  background: url("../img/12-manuals-bg.png");
-  background-position-x: 77%;
-  background-size: cover; }
+  padding-right: 24px; }
 
 .manuals__wrap {
   padding: 22px;
@@ -4327,9 +4306,6 @@ div[tabindex="0"],
   padding: 10px; }
 
 .reviews {
-  background: url("../img/15-reviews-bg.png");
-  background-position: center;
-  background-size: cover;
   padding-left: 35px;
   padding-right: 35px; }
 
@@ -4978,6 +4954,17 @@ div[data-slick-index="1"] {
     margin-right: 84px; }
   .mk__slider__icon {
     width: 60px; }
+  .mk .mk__slider__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   /*5*/
   .has-question {
     padding-top: 33px; }

@@ -546,6 +546,11 @@ div[data-slick-index="1"] {
   .mk__slider__icon {
     width: 60px;
   }
+  .mk .mk__slider__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
 /*5*/
   .has-question {
