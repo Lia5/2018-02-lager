@@ -161,7 +161,8 @@ $(document).ready(function() {
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
-      infinite: true,
+      fade: true,
+      asNavFor: '.conditions__buttons',
       responsive: [
     {
       breakpoint: 980,
@@ -169,6 +170,7 @@ $(document).ready(function() {
         adaptiveHeight: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        infinite: true,
         dots: true,
         dotsClass: "slider--my-dots",
         arrows: false
@@ -176,6 +178,17 @@ $(document).ready(function() {
     }
     ]
     });
+    $('.conditions__buttons').slick({
+      settings: "unslick",
+      arrows: false,
+      slidesToShow: 3,
+      infinite: true,
+      dots: false,
+      focusOnSelect: false,
+      asNavFor:'.conditions__slider',
+      focusOnSelect: true
+    });
+    
     
     $('.tour__slider').slick({
       arrows: true,
