@@ -963,6 +963,35 @@ button.btn-typical {
   display: inline-block;
   cursor: pointer; }
 
+input, textarea {
+  outline: none; }
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-family: 'HelveticaNeueCyr-Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal; }
+
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-family: 'HelveticaNeueCyr-Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal; }
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-family: 'HelveticaNeueCyr-Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal; }
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-family: 'HelveticaNeueCyr-Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal; }
+
 /* Slider */
 .slick-slider {
   position: relative;
