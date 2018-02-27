@@ -5090,6 +5090,17 @@ div[data-slick-index="1"] {
     padding-bottom: 84px; }
   .qa .section {
     padding-bottom: 80px; }
+  .qa__item {
+    font-size: 20px; }
+  .qa__item__btn {
+    width: 230px;
+    min-width: 230px;
+    max-width: none;
+    font-size: 20px; }
+  .qa__item__question {
+    font-size: 20px; }
+  .qa__item__answer__txt {
+    font-size: 20px; }
   /*14*/
   .reviews__name {
     font-size: 15px; }
@@ -5107,6 +5118,9 @@ div[data-slick-index="1"] {
     padding-bottom: 45px; }
   .contacts__item {
     padding-bottom: 50px; }
+  .contacts__item__icon svg {
+    width: 52px;
+    height: 52px; }
   /*popup*/
   .popup-scroll {
     max-height: 570px; }

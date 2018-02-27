@@ -689,6 +689,21 @@ div[data-slick-index="1"] {
   .qa .section {
     padding-bottom: 80px;
   }
+  .qa__item {
+    font-size: 20px;
+  }
+  .qa__item__btn {
+    width: 230px;
+    min-width: 230px;
+    max-width: none;
+    font-size: 20px;
+  }
+  .qa__item__question {
+    font-size: 20px;
+  }
+  .qa__item__answer__txt {
+    font-size: 20px;
+  }
   /*14*/
   .reviews__name {
     font-size: 15px;
