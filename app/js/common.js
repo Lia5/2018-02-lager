@@ -441,7 +441,7 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
   })(jQuery);
 
 
-
+  jQuery('.scrollbar-rail').scrollbar();
 
 
 

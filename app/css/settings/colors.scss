@@ -21,6 +21,7 @@ $color4-3: rgba(0,0,0,0.2);
 $color4-4: rgba(0,0,0,0.5);
 
 $vk: #5167e8;
+$vk2: #567099;
 $facebook: #203097;
 $telegram: #6fb2df;
 $whatsapp: #82ce64;
@@ -319,6 +320,15 @@ button.item-color--bg-3 {
 }
 .contacts__icon {
   fill: $color3;
+}
+.go-to-vk {
+  background-color: $vk2;
+}
+.reviews__feedback-vk {
+  background-color: $vk2;
+}
+.reviews .btn-typical.item-color--bg-3.item-color--txt-1:hover {
+  background-color: $vk2;
 }
 
 /*popup*/
