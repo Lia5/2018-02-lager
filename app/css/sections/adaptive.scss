@@ -713,6 +713,10 @@ div[data-slick-index="1"] {
   .contacts__item {
     padding-bottom: 50px;
   }
+  .contacts__item__icon svg {
+    width: 52px;
+    height: 52px;
+  }
   /*popup*/
   .popup-scroll{
     max-height: 570px;
