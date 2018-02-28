@@ -696,6 +696,15 @@ button.item-color--bg-3 {
 .reviews .btn-typical.item-color--bg-3.item-color--txt-1:hover {
   background-color: #567099; }
 
+.reviews__name {
+  color: #6988b7; }
+
+.reviews__feedback {
+  border: 2px solid #ffffff; }
+
+.go-to-vk {
+  border: 2px solid #ffffff; }
+
 /*popup*/
 .popup__routine__txt {
   border-left: 1px solid #bababa; }
@@ -4554,8 +4563,7 @@ div[tabindex="0"],
   display: inline-block; }
 
 .reviews__avatar {
-  position: absolute;
-  top: -32px;
+  margin: -65px auto 8px;
   width: 64px;
   height: 64px;
   border-radius: 50%; }
@@ -4604,23 +4612,39 @@ div[tabindex="0"],
 
 .reviews__data {
   font-size: 10px;
-  padding: 6px 0; }
+  padding: 6px 0;
+  opacity: 0.5; }
 
 .reviews__slider__decription {
   font-size: 11px;
   max-height: 206px; }
 
-.reviews__feedback {
-  max-width: 200px;
-  margin: 70px auto 20px;
+.reviews__slider .slider--my-dots {
+  bottom: -34px; }
+
+.reviews__buttons {
+  text-align: center; }
+
+.reviews__button {
   position: relative;
-  padding-right: 40px;
-  border: 4px solid #ffffff; }
+  margin: 47px auto 5px; }
+
+.reviews__feedback {
+  max-width: 150px;
+  font-size: 11px;
+  padding-right: 24px;
+  display: inline-block;
+  z-index: 2;
+  text-align: center;
+  color: #4196cb;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  position: relative; }
 
 .reviews__feedback-vk {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
   display: inline-block;
   border-radius: 50%;
   text-align: center;
@@ -4628,8 +4652,9 @@ div[tabindex="0"],
   -o-transition: 0.2s;
   transition: 0.2s;
   position: absolute;
-  right: 2px;
-  top: 2px; }
+  top: 0;
+  right: 0;
+  cursor: pointer; }
 
 .fa.reviews__feedback-vk {
   padding: 0; }
@@ -4639,10 +4664,22 @@ div[tabindex="0"],
   margin: 2%; }
 
 .go-to-vk {
-  display: none; }
+  font-size: 11px;
+  max-width: 143px;
+  text-align: center;
+  padding: 4px 14px 5px 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: -31px;
+  z-index: 2;
+  position: relative; }
 
-.reviews__buttons {
-  text-align: center; }
+.reviews__feedback-vk:hover .go-to-vk {
+  display: inline-block; }
+
+.see-all-reviews {
+  display: none; }
 
 .contacts__item {
   font-size: 14px;
@@ -4851,7 +4888,42 @@ div[tabindex="0"],
     -ms-flex-order: 1;
     order: 1; }
   .contacts__item {
-    width: 50%; } }
+    width: 50%; }
+  /*14*/
+  .reviews {
+    padding-bottom: 50px; }
+  .reviews__feedback-vk {
+    right: 3px;
+    top: 1px; }
+  .reviews__feedback {
+    max-width: none;
+    width: 265px;
+    padding: 10px;
+    padding-right: 40px;
+    font-size: 20px; }
+  .reviews__feedback-vk {
+    width: 46px;
+    height: 46px;
+    line-height: 46px; }
+  .fa.reviews__feedback-vk {
+    font-size: 27px; }
+  .go-to-vk {
+    max-width: none;
+    font-size: 15px;
+    padding: 10px 10px 11px 10px;
+    width: 243px;
+    margin-left: -59px; }
+  .see-all-reviews {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 35px;
+    max-width: 265px;
+    margin: 0 auto; }
+  .see-all-reviews:hover {
+    border: 2px solid #ffffff; } }
 
 @media screen and (min-width: 980px) {
   /*0*/
@@ -5306,8 +5378,8 @@ div[data-slick-index="1"] {
   .subtitle--sales {
     font-family: 'Constantia-Bold-Italic', 'Arial Narrow', Arial, sans-serif; }
   .sales__slider__item {
-    margin-right: 20px;
-    margin-left: 0; }
+    margin-right: 10px;
+    margin-left: 10px; }
   .sales__slider__item:last-child() {
     margin-right: 0; }
   /*13*/
@@ -5360,21 +5432,6 @@ div[data-slick-index="1"] {
   .question {
     padding-top: 45px;
     padding-bottom: 60px; }
-  .reviews__feedback {
-    display: inline-block;
-    width: 265px;
-    z-index: 2; }
-  .go-to-vk {
-    width: 243px;
-    text-align: center;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 25px;
-    cursor: pointer;
-    text-align: center;
-    border: 4px solid #ffffff;
-    position: relative;
-    left: -40px; }
   .reviews__slider .slick-list {
     overflow: visible; }
   .reviews__slider .scroll-wrapper {

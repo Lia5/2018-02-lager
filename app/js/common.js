@@ -456,8 +456,12 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
 
   jQuery('.scrollbar-rail').scrollbar();
 
-
-
+  $(".reviews__feedback-vk").mouseover(function() {
+    $('.go-to-vk').removeClass("hidden");
+  });
+  $(".go-to-vk").on('mouseleave', function() {
+    $('.go-to-vk').addClass("hidden");
+  });
 });   
 
 

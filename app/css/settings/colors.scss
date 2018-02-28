@@ -5,6 +5,7 @@ $color1-2:#778d9b; //dirty-blue
 $color1-3: rgba(215, 236, 255, 0.8); //полупрозрачность синего
 $color1-4: #6988b7;
 $color1-5: rgba(65, 150, 203, 0.8); //полупрозрачность синего 0.8
+$color1-6: #4196cb;
 
 $color2: #a81a5c; //pink
 $color2-1: rgba(168, 26, 92, 0.25); //pink//прозрачность 0,25
@@ -329,6 +330,15 @@ button.item-color--bg-3 {
 }
 .reviews .btn-typical.item-color--bg-3.item-color--txt-1:hover {
   background-color: $vk2;
+}
+.reviews__name {
+  color: $color1-4;
+}
+.reviews__feedback {
+  border: 2px solid $color3;
+}
+.go-to-vk {
+  border: 2px solid $color3;
 }
 
 /*popup*/
