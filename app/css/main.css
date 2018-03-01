@@ -4601,6 +4601,7 @@ div[tabindex="0"],
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  margin: 0;
   padding: 36px 7px 7px 7px;
   text-align: center;
   position: relative;
@@ -4612,7 +4613,7 @@ div[tabindex="0"],
 
 .reviews__data {
   font-size: 10px;
-  padding: 6px 0;
+  padding: 5px 0 8px;
   opacity: 0.5; }
 
 .reviews__slider__decription {
@@ -4910,7 +4911,7 @@ div[tabindex="0"],
   .go-to-vk {
     max-width: none;
     font-size: 15px;
-    padding: 10px 10px 11px 10px;
+    padding: 15px 71px 14px 71px;
     width: 243px;
     margin-left: -59px; }
   .see-all-reviews {
