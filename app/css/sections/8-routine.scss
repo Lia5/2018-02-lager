@@ -1,0 +1,60 @@
+.btn-routine {
+  margin: 20px auto;
+  text-align: center;
+  display: block;
+  max-width: 258px;
+  position: relative;
+}
+.btn-routine a {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.routine__about {
+  font-size: 13px;
+  text-align: center;
+  margin: 20px auto;
+  padding-top: 20px;
+  max-width: 216px;
+}
+.btn-routine span {
+  position: absolute;
+  top: -19px;
+  width: 3rem;
+  height: 3rem;
+  margin: 3px;
+  line-height: 3rem;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 65px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  color: $color3;
+}
+.routine .fa-angle-left,
+.routine .fa-angle-right {
+  vertical-align: middle;
+}
+.popup-routine__arrows-left {
+  left: -55px;
+}
+.popup-routine__arrows-right .fa-angle-left:nth-child(1){
+  font-size: 44px;
+  position: absolute;
+  right: 4px;
+  top: 12px;
+}
+.popup-routine__arrows-right {
+  right: -55px; 
+}
+.popup-routine__arrows-left .fa-angle-right:nth-child(2){
+  font-size: 44px;
+  position: absolute;
+  left: 4px;
+  top: 12px;
+}
+.btn-routine span:hover {
+  color: $color3;
+
+}
