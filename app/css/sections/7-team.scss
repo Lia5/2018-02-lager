@@ -1,0 +1,115 @@
+.team__slider {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.team__item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.team__memder__foto img {
+  width: 100%;
+}
+.team__item__description {
+  padding: 12px;
+  text-align: center;
+}
+
+.team__memder__name {
+  font-size: 16px;
+  line-height: 1;
+}
+.team__memder__position {
+  padding-top: 7px;
+  font-size: 11px;
+  line-height: 1;
+}
+.team .slick-prev:before,
+.team .slick-next:before {
+  font-size: 28px;
+}
+
+/*anim*/
+.team__slider-for.team__slider-for-visible {
+  height: auto;
+  visibility: visible;
+}
+.team__slider-for.hidden {
+  height: 0;
+  visibility: hidden;
+}
+
+
+.team-icon svg {
+  width: 34px;
+  height: 34px;
+}
+.team__item--full .team__item__row {
+  display: flex;
+  margin-top: 20px;
+}
+.team__item.team__item--full {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+
+.team__item__description--full {
+  font-size: 10px;
+}
+
+.team__item--full>.item--full {
+  padding: 12px;
+  margin: 10px auto;
+}
+
+.team__item--full>.team__item__description {
+  order: -1;
+  width: 67%;
+  position: relative;
+  padding-bottom: 100px;
+  text-align: left;
+}
+.team__item__description--full-mob {
+  position: absolute;
+  width: 130%;
+}
+
+.team__item--full .team__memder__foto {
+  width: 32%;
+  margin-top: 17px;
+  margin-right: 1%;
+  margin-bottom: 17px;
+}
+.sosial-icons.item--full {
+  margin: 13px 9px;
+  text-align: center;
+}
+.team__slider-for-visible .sosial-icons {
+  margin: 10px auto;
+  text-align: center;
+}
+/*hover*/
+.team__memder__foto {
+  position: relative;
+  cursor: pointer;
+}
+.team__memder__foto:hover .team-absolute {
+  bottom: 0;
+}
+.team-absolute {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all ease-out 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 60%;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-transform: uppercase;
+  font-size: 19px;
+  bottom: 100%;
+  color: $color3;
+  font-weight: 700;
+}
