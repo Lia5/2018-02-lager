@@ -1,0 +1,399 @@
+/**
+ *  Блок "Отзывы".
+ */
+
+ #reviews .title-line {
+  position: relative;
+}
+
+#reviews .title-line .video-reviews {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 6px;
+  left: 60%;
+}
+
+#reviews .title-line .arrow-right {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 30px;
+  border-radius: 50%;
+  background: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDQ1MS44NDYgNDUxLjg0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUxLjg0NiA0NTEuODQ3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTM0NS40NDEsMjQ4LjI5MkwxNTEuMTU0LDQ0Mi41NzNjLTEyLjM1OSwxMi4zNjUtMzIuMzk3LDEyLjM2NS00NC43NSwwYy0xMi4zNTQtMTIuMzU0LTEyLjM1NC0zMi4zOTEsMC00NC43NDQgICBMMjc4LjMxOCwyMjUuOTJMMTA2LjQwOSw1NC4wMTdjLTEyLjM1NC0xMi4zNTktMTIuMzU0LTMyLjM5NCwwLTQ0Ljc0OGMxMi4zNTQtMTIuMzU5LDMyLjM5MS0xMi4zNTksNDQuNzUsMGwxOTQuMjg3LDE5NC4yODQgICBjNi4xNzcsNi4xOCw5LjI2MiwxNC4yNzEsOS4yNjIsMjIuMzY2QzM1NC43MDgsMjM0LjAxOCwzNTEuNjE3LDI0Mi4xMTUsMzQ1LjQ0MSwyNDguMjkyeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=") no-repeat 50% 50% #919191;
+}
+
+#reviews .title-line .video-reviews a {
+  font-size: 24px;
+  font-family: "Monrserrat Alternates", serif;
+  color: #f0f8ff;
+}
+
+#reviews .btn-vk-reviews,
+#reviews .vk-reviews-all {
+  display: block;
+  text-align: center;
+}
+
+#reviews .btn-vk-reviews img {
+  margin: 20px auto;
+}
+
+#reviews .vk-reviews-all {
+  font-size: 16px;
+  font-family: "Monrserrat Alternates", serif;
+  color: #ffffff;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  #reviews .title-line .video-reviews {
+      position: inherit;
+      width: 100%;
+      justify-content: center;
+      left: auto;
+  }
+
+  #reviews .title-line .arrow-right {
+      display: none;
+  }
+}
+
+.discussions-vk {
+  max-width: 900px;
+  margin: 20px auto 0;
+  padding: 10px 15px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.discussions-vk .comment {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  border-radius: 2px;
+
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  margin: 10px 0;
+  background: #fff;
+}
+
+.discussions-vk .comment__column-1 {
+  padding-top: 8px;
+}
+
+.discussions-vk .comment__logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.discussions-vk .comment__online {
+  display: none;
+  padding-top: 5px;
+  font-size: 12.5px;
+  margin-top: 5px;
+  line-height: 18px;
+  color: #939393;
+  text-align: center;
+}
+
+.discussions-vk .comment__column-2 {
+  flex-basis: 100%;
+  padding-left: 30px;
+  position: relative;
+}
+
+.discussions-vk .comment__logo-image {
+  display: block;
+  max-width: 100%;
+
+  height: auto;
+  border-radius: 50%;
+
+  opacity: .9;
+
+  transition: opacity .3s;
+}
+
+.discussions-vk .comment__logo-image:hover {
+  opacity: 1;
+}
+
+.discussions-vk .comment__header {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.discussions-vk .comment__group-title {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #42648b !important;
+  text-decoration: none;
+  text-align: left !important;
+}
+
+.discussions-vk .comment__group-title:hover,
+.discussions-vk .comment__group-title:active,
+.discussions-vk .comment__group-title:focus {
+  text-decoration: underline;
+}
+
+.discussions-vk .comment__text-link {
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 100;
+  color: #2a5885;
+  text-decoration: none;
+}
+
+.discussions-vk .comment__text-link:hover,
+.discussions-vk .comment__text-link:active,
+.discussions-vk .comment__text-link:focus {
+  text-decoration: underline;
+}
+
+.discussions-vk .comment__comment-date {
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 16px;
+  color: #939393 !important;
+  margin: 0 0 0 5px;
+  text-decoration: none;
+  text-align: left !important;
+}
+
+.discussions-vk .comment__comment-date:hover {
+  text-decoration: underline;
+}
+
+.discussions-vk .comment__text-title,
+.discussions-vk .comment__original-link {
+  font-size: 13px;
+  line-height: 19px;
+  color: #000 !important;
+  text-align: left !important;
+}
+
+.discussions-vk .comment__text-title {
+  margin-bottom: 20px;
+}
+
+.discussions-vk .comment__original-link {
+  color: #42648b;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+
+.discussions-vk .comment__like {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.discussions-vk .comment__like-number {
+  margin: 0 0 0 4px;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2a5885;
+  font-size: 11.5px;
+  line-height: 10px;
+}
+
+.discussions-vk .comment__image-box {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.mCustomScrollbar {
+  -ms-touch-action: pinch-zoom;
+  touch-action: pinch-zoom; /* direct pointer events to js */
+}
+
+.mCustomScrollbar.mCS_no_scrollbar, .mCustomScrollbar.mCS_touch_action {
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+
+.mCustomScrollBox {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: none;
+  direction: ltr;
+}
+
+.mCSB_container {
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 30px;
+}
+
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+}
+
+/* non-visible scrollbar */
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container { /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-left: 0;
+}
+
+/* RTL direction/left-side scrollbar */
+
+.mCSB_scrollTools { /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+  position: absolute;
+  width: 16px;
+  height: auto;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mCSB_outside + .mCSB_scrollTools {
+  right: -26px;
+}
+
+/* scrollbar position: outside */
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools,
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools { /* RTL direction/left-side scrollbar */
+  right: auto;
+  left: 0;
+}
+
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  left: -26px;
+}
+
+/* RTL direction/left-side scrollbar (scrollbar position: outside) */
+
+.mCSB_scrollTools .mCSB_draggerContainer { /* contains the draggable element and dragger rail markup */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+.mCSB_scrollTools a + .mCSB_draggerContainer {
+  margin: 20px 0;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  background: #e6e9e6;
+}
+
+.mCSB_scrollTools .mCSB_dragger { /* the draggable element */
+  cursor: pointer;
+  width: 100%;
+  height: 30px; /* minimum dragger height */
+  z-index: 1;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { /* the dragger element */
+  position: relative;
+  width: 4px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  text-align: center;
+  background: #E91E63;
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  width: 12px; /* auto-expanded scrollbar */
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 8px; /* auto-expanded scrollbar */
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.mCSB_scrollTools .mCSB_buttonDown {
+  bottom: 0;
+}
+
+@media screen and (max-width: 830px) {
+  .discussions-vk .comment__header {
+      flex-direction: column;
+  }
+
+  .discussions-vk .comment__logo {
+      width: 80px;
+      height: 80px;
+  }
+
+  .discussions-vk .comment__column-2 {
+      flex-basis: calc(100% - 100px);
+      padding-left: 30px;
+  }
+
+  .discussions-vk .comment__image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .discussions-vk .comment__comment-date {
+      margin: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .discussions-vk .comment__logo {
+      width: 60px;
+      height: 60px;
+  }
+
+  .discussions-vk .comment {
+      padding: 10px 15px;
+  }
+
+  .discussions-vk .comment__column-2 {
+      flex-basis: calc(100%);
+      padding-left: 20px;
+  }
+}
